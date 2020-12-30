@@ -1,0 +1,16 @@
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate( -50%, 0);
+}
+
+footer > a {
+	color: grey;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+footer > a:hover {
+	font-weight: bold;
+}

@@ -1,0 +1,56 @@
+html {
+	width: 100%;
+}
+body {
+	width: 100%;
+	min-height: 100vh;
+	color: white;
+}
+
+h3 {
+	color:teal;
+	margin:0;
+	padding: .1em .5em;
+	background-color: black;
+}
+p {
+	padding:.2em;
+	margin:0;
+}
+	
+
+.var {
+	color:teal;
+}
+.index {
+	color:orange;
+}
+
+footer {
+		width: 100%;
+		height: 4rem;
+		background-color: #20202065;
+		border-top: purple 1px solid;
+		
+		
+}
+
+
+footer > * {
+	display: inline-block;
+	width: 49%;
+	border: none;
+	margin: 0;
+	padding: 0 1em;
+}
+
+footer > ul {
+	color: grey;
+	text-decoration: underline;
+	text-transform: lowercase;
+	list-style: none;
+}
+
+footer li {
+	cursor: pointer;
+}

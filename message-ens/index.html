@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Remerciement </title>
+
+		<title> PC[i] - remerciement </title>
+		<link rel="icon" href="assets/icon.png"/>
+		
+		<script src="../assets/background/background.js"></script>
+		<link rel="stylesheet" href="../assets/background/background.css">
+		<link rel="stylesheet" href="../assets/global.css">
+	</head>
+
+	<body>
+	
+		<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');	
+			* {
+	font-family: 'Roboto', sans-serif;
+	}
+			#b1 {
+				background: rgb(209,85,23);
+				background: linear-gradient(90deg, rgba(209,85,23,1) 9%, rgba(131,108,0,1) 100%);
+				border: none;
+			}
+			
+			main > form > * {
+				display: block;
+				
+			}
+			
+			br {
+				margin-bottom: 1rem;
+			}
+			
+			main > form {
+				margin: 1rem;
+			}
+			
+			main input[type="text"] {
+				padding: .4em;
+				background: #20205050;
+				border: none;
+				color: white;
+				width: 80%;
+				max-width: 15rem;
+			}
+			
+			main input::placeholder {
+				color: lightgrey;
+			}
+			
+			textarea {
+				padding: .4em;
+				background: #20205050;
+				border: none;
+				color: white;
+				width: 95%;
+				display: block;
+				height: 5rem ;
+				
+			}
+			
+			h1 {
+				text-align: center;
+			}
+			
+			button {
+				margin: auto;
+				padding: .4em 1em;
+				cursor: pointer;
+				transition: .2s;
+			}
+			
+			button:hover {
+				transform: translate(-3px , -3px);
+				box-shadow: white 2px 2px;
+			}
+			
+			button:active {
+				transform: translate(0px , 0px);
+				box-shadow: white 0px 0px;
+			
+			}
+			
+			input#anonym {
+				visibility: hidden;
+			}
+			
+			input#anonym ~ label:after {
+				content: "□";
+			}
+			
+			input#anonym:checked ~ label:after {
+				content: "✓";
+				border: 1px solid white;
+			}
+			
+			#info span{
+				display: none;
+				width: 0;
+			}
+			#info:hover span{
+				display: inline;
+				width: hover;
+			}
+		</style>
+		<h1> Remerciement </h1>
+		
+		<main>
+			<form action="http://forge.info.univ-angers.fr/~gh/matoulon/submitmsg.php" method="post">
+				<label for="prnm"> Votre prénom </label>
+				<input id="prnm" name="prnm" placeholder="ex: Jean" type="text" required/>
+				<br/>
+				<label for="nom"> Votre nom </label>
+				<input id="nom" name="nom" placeholder="ex: Pierre" type="text" required/>
+				<br/>
+				<span id="group">
+					<input id="anonym" name="anonym" placeholder="ex: Pierre" type="checkbox"/>
+					<label for="anonym"> Anonymat </label>
+					<span id="info"> &#x24D8; <span> Si cette case est cochée votre message ne sera transmit anonimement, <b>mais</b> nous garderons tous de même votre identité pour évitez tous problèmes  </span> </span>
+				</span>
+				
+				<br/>
+				<label for="nom"> Votre message </label>
+				<textarea id="nom" name="nom" placeholder="ex: Bonsoir, ... merci." id="long" required></textarea>
+				<br/>
+				
+				<button id="b1"> Envoyer </button>
+			</form>
+		</main>
+
+		<footer>
+			<ul title="soon...">
+				<li> Carte du site </li>
+				<li> Contact </li>
+			</ul>
+			<span> <span class="var">PC[<span class="index">i</span>]</span> © 2020 </span>
+		</footer>
+	</body>
+</html>

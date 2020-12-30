@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr-FR" dir="ltr">
+	<head>
+		<meta charset="utf-8"/>
+		<title> PC[i] </title>
+		<link rel="icon" href="assets/icon.png"/>
+		
+		<script src="assets/background/background.js"></script>
+		<link rel="stylesheet" href="assets/background/background.css">
+		<link rel="stylesheet" href="assets/global.css">
+		
+		<!-- -->
+		
+		<link rel="stylesheet" href="assets/home/main.css"/>
+		
+	</head>
+	
+	<body>
+		<div id="acc">
+			<img src="./assets/icon.png"/>
+			<span> &#128407; </span>
+		</div>
+		<div class="widget" id="w0">
+			<h3>PC[<span class="index">i</span>] : projetcohesion.info</h3>
+			<p>
+					Welcome to <span class="var">PC[<span class="index">i</span>]</span>, the association for computer science students of the University of Angers.
+					<br> <br>
+					To contact us, please use: contact@projetcohesion.info
+			</p>
+		</div>
+		<div class="widget" id="w1">
+			<h3>Message</h3>
+			<p>
+					L'association <span class="var">PC[<span class="index">i</span>]</span>, propose en ce moment aux étudiants qui le veulent,
+					de laisser un message à leurs enseignants!
+					<br/><br/>
+					pour cela remplissez le formulaire disponible :
+					
+					<button id="form-remerciement">ICI &#9654;</button>
+					<script>
+						document
+							.getElementById('form-remerciement')
+							.addEventListener('click' , e => window.location.href = './message-ens/');
+					</script>
+			</p>
+		</div>
+		<div class="widget loremipsum">
+			<h3>Lorem ipsum</h3>
+			<p>
+					Ceci n'est que tu texte temporaire pour remplir le site le temps de sa construction, merci.
+					<br/><br/>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+		</div>
+		<div class="widget loremipsum">
+			<h3>Lorem ipsum</h3>
+			<p>
+					Ceci n'est que tu texte temporaire pour remplir le site le temps de sa construction, merci.
+					<br/><br/>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+		</div>
+		
+		<footer>
+			<ul title="soon...">
+				<li> Carte du site </li>
+				<li> Contact </li>
+			</ul>
+			<span> <span class="var">PC[<span class="index">i</span>]</span> © 2020 </span>
+		</footer>
+	</body>
+</html>
