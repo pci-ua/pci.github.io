@@ -65,7 +65,7 @@ body {
 }
 .widget:nth-child(2n+1) {
 	text-align: left;
-	margin-left: 2em;
+	padding-left: 2em;
 }
 
 .widget, .widget > *, .widget > * {
