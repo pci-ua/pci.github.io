@@ -18,7 +18,10 @@
 	<body>
 		<div id="acc">
 			<img src="./assets/icon.png" alt="PC[i]"/>
-			<span> &#128407; </span>
+			<span id="goDown"> &#128407; </span>
+			<script>
+				document.getElementById('goDown').addEventListener( 'click' , e => document.querySelector('.widget').scrollIntoView({'behavior':'smooth'}) );
+			</script>
 		</div>
 		<div class="widget" id="w0">
 			<h3>PC[<span class="index">i</span>] : projetcohesion.info</h3>
