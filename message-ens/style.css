@@ -91,3 +91,8 @@ input#anonym:checked ~ label:after {
 	display: inline;
 	width: hover;
 }
+
+footer {
+	position: absolute;
+	bottom: 0;
+}
