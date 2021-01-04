@@ -96,3 +96,11 @@ footer {
 	position: absolute;
 	bottom: 0;
 }
+i {
+	font-style: italic;
+	font-size: 80%;
+	color: lightgrey;
+}
+i a {
+	color: lightgrey;
+}
