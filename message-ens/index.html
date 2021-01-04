@@ -10,7 +10,21 @@
 		<link rel="stylesheet" href="../assets/global.css">
 		
 		<!-- -->
-		
+		<script>
+			window.addEventListener( 'load' , d => {
+				document.querySelector( 'form' ).addEventListener( 'click' , e => {
+					let envoie = confirm(
+`Une fois le message envoyé,
+vous ne pourrez plus le changer.
+Êtes-vous sûr de vouloir l'envoyez ainsi ?`
+					);
+					if( ! envoie ) {
+						e.preventDefault();
+					}
+					return envoie;
+				});
+			});
+		</script>
 		<link rel="stylesheet" href="./style.css"/>
 	</head>
 
