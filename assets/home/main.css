@@ -8,19 +8,19 @@
 				display: block;
 				display: grid;
 				position: relative;
-				
+
 				user-select: none; /* supported by Chrome and Opera */
 -webkit-user-select: none; /* Safari */
 -khtml-user-select: none; /* Konqueror HTML */
 -moz-user-select: none; /* Firefox */
 -ms-user-select: none;
 			}
-			
+
 			#acc img {
 				margin: auto auto;
 				max-width: 90vw;
 			}
-			
+
 			#acc span {
 				color: white;
 				position: absolute;
@@ -29,12 +29,12 @@
 				transform: translate(-50%, 0);
 				font-size: 30pt;
 				cursor: pointer;
-				
+
 				animation-name: go-down;
 				animation-duration: 2s;
 				animation-iteration-count: infinite;
 			}
-			
+
 			@keyframes go-down {
 				from {
 					margin-bottom: 0;
@@ -43,14 +43,14 @@
 					margin-bottom: 20px;
 				}
 				to {
-					margin-bottom: 0;	
+					margin-bottom: 0;
 				}
 			}
-			
-			
+
+
 body {
-}	
-	
+}
+
 .widget {
 	width: 100%;
 	height: auto;
@@ -76,11 +76,21 @@ body {
 	border: none;
 	cursor: pointer;
 	color: white;
-	
-	background: rgb(209,23,86);
-	background: linear-gradient(90deg, rgba(209,23,86,1) 9%, rgba(114,0,131,1) 100%);
+
+	margin: 0.5rem;
 	padding: .2em 1em ;
 	font-weight: bold;
-	
+
 	border-radius: 1rem;
+
+}
+
+#w1 #form-remerciement-add {
+	background: rgb(209,23,86);
+	background: linear-gradient(90deg, rgba(209,23,86,1) 9%, rgba(114,0,131,1) 100%);
+}
+
+#w1 #form-remerciement-consult {
+	background: rgb(209,23,86);
+	background: linear-gradient(90deg, rgb(23, 122, 209) 9%, rgb(0, 131, 45) 100%);
 }
