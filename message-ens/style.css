@@ -1,5 +1,19 @@
+/* Header part */
+header {
+  text-align: center;
+  font-family: 'Comic Sans MS', sans-serif;
+}
+
 .message {
   display: block;
   width: 80vw;
-  margin: 0 10%;
+  margin: 5rem 10%;
+}
+
+.message h1 {
+  font-family: monospace, sans-serif;
+}
+
+.message p {
+  font-family: 'Comic Sans MS', serif;
 }
