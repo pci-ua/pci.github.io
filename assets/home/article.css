@@ -1,4 +1,6 @@
-
+article a {
+	color: white;
+}
 #w1 button,#w2 button {
 	border: none;
 	cursor: pointer;
