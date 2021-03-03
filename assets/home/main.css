@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 		/* landing */
-			#acc {
+			header {
 				width: 100vw;
 				height: 100vh;
 				display: block;
@@ -16,12 +16,12 @@
 -ms-user-select: none;
 			}
 
-			#acc img {
+			header img {
 				margin: auto auto;
 				max-width: 90vw;
 			}
 
-			#acc span {
+			header span {
 				color: white;
 				position: absolute;
 				bottom: 0;
@@ -51,7 +51,7 @@
 body {
 }
 
-.widget {
+article {
 	width: 100%;
 	height: auto;
 	margin: 4rem 0;
@@ -59,16 +59,16 @@ body {
 
 	min-height: 50vh;
 }
-.widget:nth-child(2n) {
+article:nth-child(2n) {
 	text-align: right;
 	padding-right: 2em;
 }
-.widget:nth-child(2n+1) {
+article:nth-child(2n+1) {
 	text-align: left;
 	padding-left: 2em;
 }
 
-.widget, .widget > *, .widget > * {
+article, article > *, article > * {
 	background: none !important;
 }
 

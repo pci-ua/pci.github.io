@@ -23,11 +23,14 @@
 	</head>
 
 	<body>
-		<div id="acc">
+		<!-- Accueil du site -->
+		<header>
 			<img src="./assets/icon.png" alt="PC[i]"/>
 			<span id="goDown"> &#128407; </span>
-		</div>
-		<div class="widget" id="w0">
+		</header>
+
+		<!-- Article, news etc -->
+		<article id="w0">
 			<h3><span class="var">PC[<span class="index">i</span>]</span> : projetcohesion.info</h3>
 			<p>
 					Welcome to our website, designed, managed and made for by <span class="var">PC[<span class="index">i</span>]</span>,<br/>
@@ -35,8 +38,9 @@
 					<br/> <br/>
 					For further information, please contact us at <a href="mailto:contact@projetcohesion.info">contact@projetcohesion.info</a>
 			</p>
-		</div>
-		<div class="widget" id="w1">
+		</article>
+
+		<article id="w1">
 			<h3>Message</h3>
 			<p>
 					L'association <span class="var">PC[<span class="index">i</span>]</span>, propose en ce moment aux étudiants qui le veulent,
@@ -45,23 +49,25 @@
 					<button id="form-remerciement-consult" onclick="window.location.href = './message-ens/'">VOIR &#9654;</button>
 					<button id="form-remerciement-add" onclick="window.location.href = './message-ens/ajout/'">AJOUTER &#9654;</button>
 			</p>
-		</div>
-		<div class="widget" id="w2">
+		</article>
+
+		<article id="w2">
 			<h3>Serveur Discord</h3>
 			<p>
 					Le serveur Discord de l'association <span class="var">PC[<span class="index">i</span>]</span>, c'est par ici!
 					<br/><br/>
 					<button id="discord-link" onclick="window.location.href = './discord/'"> REJOINDRE </button>
 			</p>
-		</div>
-		<div class="widget loremipsum">
+		</article>
+		
+		<article class="loremipsum">
 			<h3>Lorem ipsum</h3>
 			<p>
 					Ceci n'est que tu texte temporaire pour remplir le site le temps de sa construction, merci.
 					<br/><br/>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			</p>
-		</div>
+		</article>
 
 	</body>
 </html>
