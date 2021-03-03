@@ -72,7 +72,7 @@ body {
 	background: none !important;
 }
 
-#w1 button {
+#w1 button,#w2 button {
 	border: none;
 	cursor: pointer;
 	color: white;
@@ -93,4 +93,24 @@ body {
 #w1 #form-remerciement-consult {
 	background: rgb(209,23,86);
 	background: linear-gradient(90deg, rgb(23, 122, 209) 9%, rgb(0, 131, 45) 100%);
+}
+
+#w2 #discord-link {
+	background: #6577C2;
+	color: #000;mix-blend-mode: screen;
+	position: relative;
+	padding-right: 2rem;
+}
+
+#w2 #discord-link:after {
+	background-image: url('https://discord.com/assets/1c8a54f25d101bdc607cec7228247a9a.svg');
+	content: '';
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	right: 0.5rem;
+	top: 50%;
+	transform: translate(0,-50%);
+	outline: none;
 }

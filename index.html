@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr-FR" dir="ltr">
 	<head>
-		<meta charset="utf-8"/>
-		<title> PC[i] </title>
-		<link rel="icon" href="assets/icon.png"/>
+			<!-- -->
+			<meta charset="utf-8"/>
+			<title> PC[i] - Discord </title>
 
-		<script src="assets/background/background.js"></script>
-		<link rel="stylesheet" href="assets/background/background.css">
-		<link rel="stylesheet" href="assets/global.css">
+			<link rel="icon" href="assets/icon.png" type="image/png"/>
+			<link rel="stylesheet" href="assets/global.css" type="text/css"/>
 
-		<!-- -->
+			<!-- Background -->
+			<script src="assets/background/background.js"></script>
+			<link rel="stylesheet" href="assets/background/background.css" type="text/css"/>
 
-		<link rel="stylesheet" href="assets/home/main.css"/>
-		<style> .widget a { color: white; } </style>
+			<!-- Footer -->
+			<script src="assets/footer/footer.js"></script>
+			<link rel="stylesheet" href="assets/footer/footer.css" type="text/css"/>
+
+			<!-- Local -->
+			<style> .widget a { color: white; } </style>
+			<link rel="stylesheet" href="assets/home/main.css" type="text/css"/>
+			<script src="assets/home/scroll.js"></script>
 	</head>
 
 	<body>
 		<div id="acc">
 			<img src="./assets/icon.png" alt="PC[i]"/>
 			<span id="goDown"> &#128407; </span>
-			<script>
-				document.getElementById('goDown').addEventListener( 'click' , e => document.querySelector('.widget').scrollIntoView({'behavior':'smooth'}) );
-			</script>
 		</div>
 		<div class="widget" id="w0">
 			<h3><span class="var">PC[<span class="index">i</span>]</span> : projetcohesion.info</h3>
@@ -42,12 +46,12 @@
 					<button id="form-remerciement-add" onclick="window.location.href = './message-ens/ajout/'">AJOUTER &#9654;</button>
 			</p>
 		</div>
-		<div class="widget loremipsum">
-			<h3>Lorem ipsum</h3>
+		<div class="widget" id="w2">
+			<h3>Serveur Discord</h3>
 			<p>
-					Ceci n'est que tu texte temporaire pour remplir le site le temps de sa construction, merci.
+					Le serveur Discord de l'association <span class="var">PC[<span class="index">i</span>]</span>, c'est par ici!
 					<br/><br/>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					<button id="discord-link" onclick="window.location.href = './discord/'"> REJOINDRE </button>
 			</p>
 		</div>
 		<div class="widget loremipsum">
@@ -59,12 +63,5 @@
 			</p>
 		</div>
 
-		<footer>
-			<ul title="soon...">
-				<li> Carte du site </li>
-				<li> Contact </li>
-			</ul>
-			<span> <span class="var">PC[<span class="index">i</span>]</span> © 2020-2021 </span>
-		</footer>
 	</body>
 </html>
