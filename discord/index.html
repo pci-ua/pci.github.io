@@ -17,24 +17,27 @@
 			<link rel="stylesheet" href="../assets/footer/footer.css" type="text/css"/>
 
 			<!-- Local -->
+			<link rel="stylesheet" href="./style.css" type="text/css"/>
+			<script src="email-invite.js"></script>
 	</head>
 
 	<body>
 
 		<header>
-			<div style="text-align: center;">
-	    <div style="margin-bottom: 3rem;">
 	      <img width="100" src="https://www.univ-angers.fr/_resources/Documents/DCOM/logo/HORIZONTAL/ECRAN/PNG/ua_h_blanc_ecran.png?download=false" alt="UnivAngers logo"/>
 	      <img width="100" src="../assets/icon.png" alt="PCi logo"/>
 	      <img width="100" src="https://discord.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg" alt="Discord logo"/>
-	    </div>
-	    <span> Pour vérifier votre identité,inséré votre adresse universitaire ci-dessous vous recevrez le lien par maim </span>
-	    <input type="mail" placeholder="identifiant@univ-angers.fr"/>
-	    <button>Envoyer</button>
-	  </div>
 		</header>
 
 		<main>
+			<span> Pour des raisons de sécurités, le lien d'accès n'est pas public,<br/> veuillez indiquez votre addresse mail universitaire vous recevrez le lien d'invitation par mail </span>
+			<form>
+				<input pattern=".*@univ-angers.fr" type="email" placeholder="identifiant@univ-angers.fr" required id="courriel"/>
+				<br/>
+				<button>Envoyer</button>
+			</form>
+			<i> Si vous ne possedez pas d'addresse mail universitaire(@univ-angers.fr) veuillez prendre contact <!-- TO DO --> </i>
+			<!-- à finirs -->
 		</main>
 
 	</body>
