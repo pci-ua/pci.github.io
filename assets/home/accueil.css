@@ -1,0 +1,31 @@
+
+header img {
+	margin: auto auto;
+	max-width: 90vw;
+}
+
+header span {
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 30pt;
+	cursor: pointer;
+
+	animation-name: go-down;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes go-down {
+	from {
+		margin-bottom: 0;
+	}
+	50% {
+		margin-bottom: 20px;
+	}
+	to {
+		margin-bottom: 0;
+	}
+}
