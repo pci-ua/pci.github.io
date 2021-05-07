@@ -3,6 +3,6 @@ window.addEventListener( 'load' , () => {
     .getElementById('goDown')
     .addEventListener( 'click' , e =>
       document
-        .querySelector('.widget')
+        .querySelector('article')
         .scrollIntoView({'behavior':'smooth'}));
 });
