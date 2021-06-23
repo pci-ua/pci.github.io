@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* Annulation des styles par défauts */
+html, body {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* Ambiance générale */
+html {
+	background: black;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+/* Disposition des éléments */
+body {
+	width: 100vw;
+	height: 100vh;
+	
+	display: grid;
+	grid-template:
+		"a a" 1fr 
+		"b c" 1fr  / 1fr 1fr;
+}
+
+#saisie {
+	grid-area: a;
+}
+
+#resultat {
+	grid-area: b;
+	background-color: #0502;
+}
+
+#rendu {
+	grid-area: c;
+}
+
+body > * {
+	overflow: auto;
+}
+
+/* Partie principale */
+main {
+	text-align: center;
+}
+
+#saisie img {
+	width: 6rem;
+}
+
+#saisie h1 {
+	font-weight: 400;
+}
+
+#saisie div {
+	margin: 1rem 0;
+}
+
+#saisie select {
+	cursor: pointer;
+}
+
+#saisie #nominatif {
+	display: grid;
+	grid-template:
+		"a a" 1fr
+		"b c" 1fr
+		"d e" 1fr / 1fr 1fr;
+	width: 15em;
+	margin: auto;
+}
+#saisie #nominatif span {
+	grid-area: a;
+}
+#saisie #nominatif label[for="avec"] {
+	grid-area: b;
+}
+#saisie #nominatif #avec {
+	grid-area: c;
+}
+
+#saisie #nominatif label[for="sans"] {
+	grid-area: d;
+}
+#saisie #nominatif #sans {
+	grid-area: e;
+}
+
+#saisie #nominatif :is(label, input) {
+	cursor: pointer;
+}
+
+
+
+/* Partie rendu */
+#rendu {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	
+	padding: 1rem;
+}
+
+
+#rendu-light {
+	background-color: #EEE;
+}
+#rendu-dark {
+	background-color: #111;
+}
+
+
+
