@@ -51,7 +51,7 @@ function refresh() {
 	let info = {mail,categorie,nom,prenom,identitee,titre};
 	console.info(info);
 
-	let template = $('#newmethod').checked ? modernSignature(identitee,info) : oldSchoolSignature(identitee,info);
+	let template = ($('#newmethod').checked ? modernSignature : oldSchoolSignature)(identitee,info);
 
 	$('#resultat').innerText = template;
 	[...document.querySelectorAll('#rendu > *')].forEach(r=>r.innerHTML=template);
