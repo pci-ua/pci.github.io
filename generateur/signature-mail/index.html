@@ -3,18 +3,17 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title> Générateur Signature Mail PC[i] </title>
-		
+
 		<link href="style.css" rel="stylesheet" type="text/css"/>
 		<link href="https://projetcohesion.info/assets/icon.png" rel="icon" type="image/png"/>
-		
+
 		<script src="generateur.js" defer></script>
 	</head>
-	
+
 	<body>
 		<main id="saisie">
 			<img src="https://projetcohesion.info/assets/icon.png"/>
 			<h1> Générateur de signature mail </h1>
-			
 			<form>
 				<div id="role">
 					<select name="role" required>
@@ -33,12 +32,12 @@
 					<label for="nom"> Nom : </label>
 					<input type="text" id="nom" name="nom" placeholder="Martin" required/>
 				</div>
-				
+        
 				<div id="lastname">
 					<label for="prenom"> Prénom : </label>
 					<input type="text" id="prenom" name="prenom" placeholder="Christelle" required/>
 				</div>
-				
+        
 				<div id="nominatif">
 					<span> Type : </span>
 					<label for="avec"> Avec identitée </label>
@@ -46,21 +45,28 @@
 					<label for="sans"> Sans identitée </label>
 					<input type="radio" id="sans" name="nomminative"/>
 				</div>
-				
+
+
+				<div id="newmethodsignature">
+					<label for="newmethod"> Utiliser une version "moderne" </label>
+					<input type="checkbox" id="newmethod" name="newmethod"/> <br/>
+					<span style="color:red;"> ⚠ Le rendu est le même mais ne sera pas supporté par tous les lecteurs ! </span>
+				</div>
+
 			</form>
 		</main>
-		
+
 		<pre id="resultat">
-		
+
 		</pre>
-		
+
 		<div id="rendu">
 			<div id="rendu-light">
-			
+
 			</div>
 			<div id="rendu-dark">
-			
-			</div>		
+
+			</div>
 		</div>
 	</body>
 </html>
