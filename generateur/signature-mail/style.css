@@ -19,11 +19,11 @@ html {
 body {
 	width: 100vw;
 	height: 100vh;
-	
+
 	display: grid;
 	grid-template:
-		"a a" 1fr 
-		"b c" 1fr  / 1fr 1fr;
+		"a a" auto
+		"b c" auto  / 1fr 1fr;
 }
 
 #saisie {
@@ -101,7 +101,7 @@ main {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 1rem;
-	
+
 	padding: 1rem;
 }
 
@@ -112,6 +112,3 @@ main {
 #rendu-dark {
 	background-color: #111;
 }
-
-
-
