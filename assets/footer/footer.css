@@ -36,6 +36,10 @@ footer a {
 	text-decoration: none;
 }
 
+footer h3 {
+	background-color: transparent;
+}
+
 .centre {
 	display: flex;
 	justify-content: center;
