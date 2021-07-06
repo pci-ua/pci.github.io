@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+	--main-font: 'Open Sans', sans-serif;
+	--second-font: 'Caveat', cursive;
+}
+
 html {
 	width: 100%;
 	color: white;
+	font-family: var(--main-font);
 }
+
 body {
 	width: 100%;
 	min-height: 100vh;
