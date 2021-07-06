@@ -7,12 +7,17 @@ footer {
 		justify-content: space-around;
 
 		display: grid;
-		grid-template-columns: repeat(auto-fit, 22rem);
+		grid-template-columns: repeat(3, 24rem);
 		align-items: center;
 
 		text-align: center;
 }
 
+@media(max-width: 70rem) {
+	footer {
+		grid-template-columns: 1fr;
+	}
+}
 footer > * {
 	border: none;
 	margin: 0;
@@ -37,12 +42,17 @@ footer * img {
 	margin-top: 1%;
 }
 
+footer .lien {
+	text-align: center;
+}
 footer .lien ul {
 	list-style: none;
 
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 8rem);
+	grid-template-columns: repeat(auto-fit, 10rem);
 	grid-gap: 1.5rem;
+	align-items: center;
+	justify-content: center;
 }
 
 footer .lien :is(ul,li) {
