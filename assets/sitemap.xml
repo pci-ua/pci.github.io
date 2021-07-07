@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://projetcohesion.info/">
   <url>
-    <loc></loc>
-    <lastmod>2021-02-25</lastmod>
+    <loc>/</loc>
   </url>
   <url>
-    <loc>message-ens/</loc>
-    <lastmod>2021-02-25</lastmod>
+    <loc>/CGU/</loc>
   </url>
   <url>
-    <loc>CGU/</loc>
-    <lastmod>2021-05-07</lastmod>
+    <loc>/generateur/signature-mail/</loc>
   </url>
 </urlset>
