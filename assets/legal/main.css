@@ -1,0 +1,9 @@
+header {
+    text-align: center;
+    margin: 1rem;
+}
+
+header img {
+    margin: auto auto;
+    width: 20rem;
+}
