@@ -7,3 +7,52 @@ header img {
     margin: auto auto;
     width: 20rem;
 }
+
+main {
+    display: block;
+    width: clamp(70%,35rem,100%);
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+main section span {
+    color: orange;
+    font-style: italic;
+}
+
+main section article h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+main section article {
+    margin: 1rem;
+}
+
+main section article a {
+    color: white;
+}
+
+main section article h3 a {
+    color: teal;
+}
+
+main section article p {
+    text-align: justify;
+}
+
+main section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4em;
+}
+
+article ~ article {
+    margin-top: 3rem !important;
+}
+
+main, main * {
+    background: none;
+}
