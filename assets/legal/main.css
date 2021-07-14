@@ -42,8 +42,15 @@ main section article p {
     text-align: justify;
 }
 
-main section div {
-    display: flex;
+.sous-titre {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 19rem);
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 4em;
