@@ -30,9 +30,14 @@ main section article p {
     text-align: justify;
 }
 
-.flex {
+main section article a {
+    color: white;
+}
+
+.map {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 main section article h4 {
