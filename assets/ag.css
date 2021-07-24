@@ -1,0 +1,58 @@
+h1, h2, h3, h4, h5, h6 { background: none; }
+
+hr {
+  background-color: teal;
+  border-color: teal;
+  width: clamp(50%, 35rem, 100%);
+}
+/* En-tête */
+header {
+  text-align: center;
+  min-height: 100vh;
+}
+
+header #goDown {
+  text-align: center;
+  display: block;
+  font-size: 40pt;
+  animation-name: go-down;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes go-down {
+	from {
+		margin-top: 0;
+    margin-bottom: 20px;
+	}
+	50% {
+		margin-top: 20px;
+    margin-bottom: 0;
+	}
+	to {
+		margin-top: 0;
+    margin-bottom: 20px;
+	}
+}
+
+/* Menu */
+nav {
+  width: clamp(50%, 25rem , 100%);
+  margin: auto;
+}
+nav h3 {
+  text-align: center;
+}
+
+nav > ul {
+  list-style-type: '▶ ';
+}
+
+nav > ul >li {
+  margin-bottom: 5px;
+}
+
+nav > ul > li > ul {
+  list-style-type: ' • ';
+}
