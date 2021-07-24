@@ -64,3 +64,34 @@ main {
   width: min(100%, 75rem);
   margin: auto;
 }
+main div {
+  position: relative;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+main div * {
+  transition: .5s;
+}
+main div h6 {
+  font-size: 15pt;
+}
+main div:hover > * {
+  font-size: 110%;
+}
+main div:hover > h6 {
+  font-size: 17pt;
+}
+
+main h4 {
+  position: relative;
+  font-size: 20pt;
+}
+
+main * ~ h4:before {
+  display: block;
+  margin: 1rem auto ;
+  height: 1px;
+  width: 50%;
+  content: ' ';
+  background-color: orange
+}
