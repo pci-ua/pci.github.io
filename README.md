@@ -1,2 +1,4 @@
+![Logo PCi](https://projetcohesion.info/assets/icon.png)
+
 # PC-site
-Site web pour PC[i]
+Site web pour l'association Projet et Cohésion en Informatique ( PC[i] )
