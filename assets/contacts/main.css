@@ -1,0 +1,57 @@
+
+header {
+    text-align: center;
+    margin: 1rem;
+}
+
+header img {
+    width: 20rem;
+}
+
+main {
+    display: block;
+    width: clamp(60%,35rem,100%);
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+main section h3 {
+    color: teal;
+    text-indent: 50px;
+    margin-bottom: 1em;
+}
+
+main section article {
+    margin: 1rem;
+}
+
+main section article p {
+    text-align: justify;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section article h4 {
+    padding: .2em;
+    margin-bottom: .5em;
+}
+
+.sous-titre {
+    color: orange;
+    text-indent: 0;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+article ~ article {
+    margin-top: 3rem !important;
+}
+
+main, main * {
+    background: none;
+}
+
