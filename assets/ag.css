@@ -60,13 +60,17 @@ nav > ul > li > ul {
 
 
 /* Contenu */
+
+main h4 {
+  text-align: center;
+}
 main {
   width: min(100%, 75rem);
   margin: auto;
 }
 main div {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 3.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 main div * {
@@ -89,7 +93,8 @@ main h4 {
 
 main * ~ h4:before {
   display: block;
-  margin: 1rem auto ;
+  margin: 3rem auto ;
+  margin-top: Calc(3rem + 15rem);
   height: 1px;
   width: 50%;
   content: ' ';
