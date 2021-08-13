@@ -30,54 +30,59 @@
 			<span id="goDown"> &#128407; </span>
 		</header>
 
-		<!-- Article, news etc -->
-		<article id="w0">
-			<h3><span class="var">PC[<span class="index">i</span>]</span> : projetcohesion.info</h3>
-			<p>
-					Welcome to our website, designed, managed and made for by <span class="var">PC[<span class="index">i</span>]</span>,<br/>
-					an organisation held by a group of Computer Science students, of the University of Angers.
-					<br/> <br/>
-					For further information, please contact us at <a href="mailto:contact@projetcohesion.info">contact@projetcohesion.info</a>
-			</p>
-		</article>
+		<main>
+			<section>
+				<!-- Article, news etc -->
+				<article id="w0">
+					<h3><span class="var">PC[<span class="index">i</span>]</span> : projetcohesion.info</h3>
 
-		<article id="w1">
-			<h3><span class="var">PC[<span class="index">i</span>]</span> Recrute !</h3>
-			<p>
-					L'association <span class="var">PC[<span class="index">i</span>]</span> recrute, tout étudiants de l'Université.
-					Vous souhaitez vous investir pour votre promo et/ou filière ? Participer à l'élaboration à des projets ?
-					Si oui rejoins nous ! <a href="mailto:contact@projetcohesion.info">contact@projetcohesion.info</a>
-			</p>
-		</article>
+					<p>
+						<!--
+							Welcome to our website, designed, managed and made for by <span class="var">PC[<span class="index">i</span>]</span>,<br/>
+							an organisation held by a group of Computer Science students, of the University of Angers.
+							<br/> <br/>
+							For further information, please contact us at <a href="mailto:contact@projetcohesion.info">contact@projetcohesion.info</a>
+						-->
 
-		<article id="w2">
-			<h3>Message</h3>
-			<p>
-					L'association <span class="var">PC[<span class="index">i</span>]</span>, propose en ce moment aux étudiants qui le veulent,
-					de laisser un message à leurs enseignants!
-					<br/><br/>
-					<button id="form-remerciement-consult" onclick="window.location.href = './message-ens/'">VOIR &#9654;</button>
-					<button id="form-remerciement-add" onclick="window.location.href = './message-ens/ajout/'">AJOUTER &#9654;</button>
-			</p>
-		</article>
+						Bienvenu sur notre site conçu, managé et fait par <span class="var">PC[<span class="index">i</span>]</span>,<br/>
+						une association des étudiants en informatique de l'Université d'Angers.
+						<br/> <br/>
+						Pour plus d'information, vous pouvez consulter notre
+						<a href="a-propos">page de présentation</a> ou nous
+						<a href="contacts">contacter</a>.
+					</p>
+				</article>
 
-		<article id="w3">
-			<h3>Serveur Discord</h3>
-			<p>
-					Le serveur Discord de l'association <span class="var">PC[<span class="index">i</span>]</span>, c'est par ici!
-					<br/><br/>
-					<button id="discord-link" onclick="window.location.href = './discord/'"> REJOINDRE </button>
-			</p>
-		</article>
+				<article id="w1">
+					<h3><span class="var">PC[<span class="index">i</span>]</span> Recrute !</h3>
+					<p>
+							L'association <span class="var">PC[<span class="index">i</span>]</span> recrute tout étudiants de l'Université.
+							Vous souhaitez vous investir pour votre promo et/ou filière ? Participer à l'élaboration à des projets ?
+							Si oui, rejoins nous ! <a href="mailto:contact@projetcohesion.info">contact@projetcohesion.info</a>
+							<!-- À remplacer dans le futur par un formulaire d'inscription -->
+					</p>
+				</article>
 
-		<article class="loremipsum">
-			<h3>Lorem ipsum</h3>
-			<p>
-					Ceci n'est que tu texte temporaire pour remplir le site le temps de sa construction, merci.
-					<br/><br/>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-		</article>
+				<article id="w2">
+					<h3>Message</h3>
+					<p>
+							L'association <span class="var">PC[<span class="index">i</span>]</span>, propose en ce moment aux étudiants qui le veulent,
+							de laisser un message à leurs enseignants!
+							<br/><br/>
+							<button id="form-remerciement-consult" onclick="window.location.href = './message-ens/'">VOIR &#9654;</button>
+							<button id="form-remerciement-add" onclick="window.location.href = './message-ens/ajout/'">AJOUTER &#9654;</button>
+					</p>
+				</article>
 
+				<article id="w3">
+					<h3>Serveur Discord</h3>
+					<p>
+							Le serveur Discord de l'association <span class="var">PC[<span class="index">i</span>]</span>, c'est par ici!
+							<br/><br/>
+							<button id="discord-link-test" onclick="window.location.href = './discord/'"> REJOINDRE &#9654;</button>
+					</p>
+				</article>
+			</section>
+		</main>
 	</body>
 </html>
