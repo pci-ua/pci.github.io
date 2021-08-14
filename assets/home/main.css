@@ -47,12 +47,6 @@ article, article > * {
 	background: none !important;
 }
 
-main section article:nth-child(odd) h3 {
-	text-indent: 50px;
-	padding-bottom: 25px;
-}
-
-main section article:nth-child(even) h3 {
-	padding-right: 50px;
+main section h3 {
 	padding-bottom: 25px;
 }
