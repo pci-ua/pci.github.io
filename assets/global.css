@@ -22,11 +22,12 @@ h3 {
 	color:teal;
 	margin:0;
 	background-color: black;
+	font-size: larger;
 }
+
 p {
 	margin:0;
 }
-
 
 .var {
 	color:teal;
