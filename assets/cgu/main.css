@@ -16,12 +16,6 @@ main {
 	padding-bottom: 4%;
 }
 
-main section h3 {
-	color: teal;
-	text-indent: 50px;
-	margin-bottom: 1em;
-}
-
 main section article {
 	margin: 1rem;
 }
