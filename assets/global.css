@@ -21,14 +21,17 @@ body {
 h3 {
 	color:teal;
 	margin:0;
-	padding: .1em .5em;
 	background-color: black;
-}
-p {
-	padding:.2em;
-	margin:0;
+
+	font-size: 20px;
+	padding-bottom: 25px;
+
+	/* font-size: larger; */
 }
 
+p {
+	margin:0;
+}
 
 .var {
 	color:teal;
