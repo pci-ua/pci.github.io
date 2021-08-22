@@ -22,7 +22,11 @@ h3 {
 	color:teal;
 	margin:0;
 	background-color: black;
-	font-size: larger;
+
+	font-size: 20px;
+	padding-bottom: 25px;
+
+	/* font-size: larger; */
 }
 
 p {

@@ -12,14 +12,23 @@ main {
 	display: block;
 	width: clamp(60%,35rem,100%);
 	margin: auto;
-}
-
-main section h3 {
-	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 4%;
 }
 
 main section article {
 	margin: 1rem;
+}
+
+main section article p {
+	text-align: justify;
+}
+
+.sous-titre {
+	color: orange;
+	text-indent: 0;
+	text-align: center;
+	padding-bottom: 2em;
 }
 
 article ~ article {
