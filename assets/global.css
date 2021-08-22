@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
@@ -22,14 +21,13 @@ body {
 h3 {
 	color:teal;
 	margin:0;
-	padding: .1em .5em;
 	background-color: black;
-}
-p {
-	padding:.2em;
-	margin:0;
+	font-size: larger;
 }
 
+p {
+	margin:0;
+}
 
 .var {
 	color:teal;
