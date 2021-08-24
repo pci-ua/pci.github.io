@@ -27,10 +27,6 @@ main section article {
     margin: 1rem;
 }
 
-main section article a {
-    color: white;
-}
-
 main section article h3 a {
     color: teal;
 }
@@ -47,19 +43,20 @@ main section article div {
     align-items: baseline;
 }
 
-main section article div div {
+/* Carte de présentation des membres du bureau */
+.office-card {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main section article div div img {
+.office-card img {
     width: 10em;
     border: solid white 2px;
     border-collapse: collapse;
 }
 
-main section article div div span {
+.office-card span {
     margin-top: .5em;
     margin-bottom: .5em;
 }
@@ -80,8 +77,4 @@ main section article div div span {
 
 article ~ article {
     margin-top: 3rem !important;
-}
-
-main, main * {
-    background: none;
 }
