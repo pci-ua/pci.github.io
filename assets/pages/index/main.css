@@ -35,10 +35,6 @@ article:nth-child(odd) {
 	float: left;
 }
 
-article, article > * {
-	background: none !important;
-}
-
 main section h3 {
 	padding-bottom: 25px;
 }
