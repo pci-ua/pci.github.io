@@ -36,11 +36,19 @@ html, a {
 a:visited {
 	color: #eaeaea;
 }
+
+/* Pour le logo PC[i] écrit en texte */
 .var {
 	color:teal;
 }
 .index {
 	color:orange;
+}
+
+main, main * {
+    background: none;
+}
+
 /* Bande verticale et centrer, responsive avec une marge minimale */
 main {
 	display: block;
