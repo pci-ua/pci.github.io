@@ -47,8 +47,3 @@ main section article h4 {
 article ~ article {
     margin-top: 3rem !important;
 }
-
-main, main * {
-    background: none;
-}
-

@@ -55,7 +55,3 @@ main section article p {
 article ~ article {
     margin-top: 3rem !important;
 }
-
-main, main * {
-    background: none;
-}
