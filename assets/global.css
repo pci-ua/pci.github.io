@@ -61,3 +61,12 @@ main {
 article ~ article {
     margin-top: 3rem !important;
 }
+
+/* Retire la possibilité de selectionnez l'entête, cela peut créer des choses moches. */
+header {
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
