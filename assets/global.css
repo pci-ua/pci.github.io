@@ -8,14 +8,12 @@
 
 html {
 	width: 100%;
-	color: white;
 	font-family: var(--main-font);
 }
 
 body {
 	width: 100%;
 	min-height: 100vh;
-	color: white;
 }
 
 h3 {
@@ -31,6 +29,13 @@ p {
 	margin:0;
 }
 
+/* La couleur par défaut est le blanc, et on dit explicitement que les a sont par défaut de la même couleur */
+html, a {
+	color: white;
+}
+a:visited {
+	color: #eaeaea;
+}
 .var {
 	color:teal;
 }
