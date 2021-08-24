@@ -8,14 +8,6 @@ header img {
     width: 20rem;
 }
 
-main {
-    display: block;
-    width: clamp(70%,35rem,100%);
-    margin: auto;
-    padding-top: 2%;
-    padding-bottom: 4%;
-}
-
 main section span {
     color: orange;
     font-style: italic;

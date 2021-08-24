@@ -38,4 +38,10 @@ p {
 }
 .index {
 	color:orange;
+}/* Bande verticale et centrer, responsive avec une marge minimale */
+main {
+	display: block;
+	width: clamp(60%,35rem,Calc(100% - 20px));
+	margin: auto;
+	padding-top: 5em;
 }

@@ -8,14 +8,6 @@ header img {
     width: 20rem;
 }
 
-main {
-    display: block;
-    width: clamp(60%,35rem,100%);
-    margin: auto;
-    padding-top: 2%;
-    padding-bottom: 4%;
-}
-
 main section h3 {
     color: teal;
     text-indent: 50px;
