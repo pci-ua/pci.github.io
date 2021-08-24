@@ -1,7 +1,7 @@
 window.addEventListener( 'load' , () => {
   document
     .getElementById('goDown')
-    .addEventListener( 'click' , e =>
+    .addEventListener( 'click' , _ =>
       document
         .querySelector('main')
         .scrollIntoView({'behavior':'smooth'}));
