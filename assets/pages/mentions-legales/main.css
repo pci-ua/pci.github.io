@@ -43,7 +43,3 @@ main section article p {
     align-items: baseline;
     margin-bottom: 2em;
 }
-
-article ~ article {
-    margin-top: 3rem !important;
-}

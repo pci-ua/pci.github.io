@@ -22,7 +22,3 @@ main section article p {
 	text-align: center;
 	padding-bottom: 2em;
 }
-
-article ~ article {
-	margin-top: 3rem !important;
-}

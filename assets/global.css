@@ -56,3 +56,8 @@ main {
 	margin: auto;
 	padding-top: 5em;
 }
+
+/* Marge inter-article */
+article ~ article {
+    margin-top: 3rem !important;
+}
