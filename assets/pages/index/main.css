@@ -5,7 +5,6 @@
 header {
 	width: 100vw;
 	height: 100vh;
-	display: block;
 	display: grid;
 	position: relative;
 
