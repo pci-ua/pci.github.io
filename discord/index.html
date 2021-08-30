@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr-FR" dir="ltr">
 	<head>
-			<!-- -->
-			<meta charset="utf-8"/>
-			<title> PC[i] - Discord </title>
+		<!-- -->
+		<meta charset="utf-8"/>
+		<title> PC[i] - Discord </title>
 
-			<link rel="icon" href="/assets/icon.png" type="image/png"/>
-			<link rel="stylesheet" href="/assets/global.css" type="text/css"/>
+		<link rel="icon" href="/assets/icon.png" type="image/png"/>
+		<link rel="stylesheet" href="/assets/global.css" type="text/css"/>
 
-			<!-- Background -->
-			<script src="/assets/modules/background/background.js"></script>
-			<link rel="stylesheet" href="/assets/modules/background/background.css" type="text/css"/>
+		<!-- Background -->
+		<script src="/assets/modules/background/background.js"></script>
+		<link rel="stylesheet" href="/assets/modules/background/background.css" type="text/css"/>
 
-			<!-- Footer -->
-			<script src="/assets/modules/footer/footer.js"></script>
-			<link rel="stylesheet" href="/assets/modules/footer/footer.css" type="text/css"/>
+		<!-- Footer -->
+		<script src="/assets/modules/footer/footer.js"></script>
+		<link rel="stylesheet" href="/assets/modules/footer/footer.css" type="text/css"/>
 
-			<!-- Local -->
-			<link rel="stylesheet" href="./style.css" type="text/css"/>
-			<script src="email-invite.js"></script>
+		<!-- Local -->
+		<link rel="stylesheet" href="./style.css" type="text/css"/>
+		<script src="anti-bot.js" defer></script>
 	</head>
 
 	<body>
 
-		<h1 style="color:red;font-size:300%;"> SOON </h1>
 		<header>
-	      <img width="100" src="https://www.univ-angers.fr/_resources/Documents/DCOM/logo/HORIZONTAL/ECRAN/PNG/ua_h_blanc_ecran.png?download=false" alt="UnivAngers logo"/>
-	      <img width="100" src="/assets/icon.png" alt="PCi logo"/>
-	      <img width="100" src="https://discord.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg" alt="Discord logo"/>
+	      <img src="/assets/images/ua.png" alt="UnivAngers logo"/>
+	      <img src="/assets/icon.png" alt="PCi logo"/>
+	      <img src="/assets/images/reseaux/discord.png" alt="Discord logo"/>
 		</header>
 
 		<main>
-			<span> Pour des raisons de sécurités, le lien d'accès n'est pas public,<br/> veuillez indiquez votre addresse mail universitaire vous recevrez le lien d'invitation par mail </span>
-			<form>
-				<input pattern=".*@univ-angers.fr" type="email" placeholder="identifiant@univ-angers.fr" required id="courriel"/>
-				<br/>
-				<button>Envoyer</button>
-			</form>
-			<i> Si vous ne possedez pas d'addresse mail universitaire(@univ-angers.fr) veuillez prendre contact <!-- TO DO --> </i>
-			<!-- à finirs -->
+			<input type="button" id="regenerate" value="🗘">
+			<canvas id="calcul">
+				<!-- Si navigateur incompatible avec canvas -->
+				Contacter nous via :
+				<a href="mailto:contact@projetcohesion.info">mailto:contact@projetcohesion.info</a>
+			</canvas>
+
+			<input type="text" id="reponse"/>
+			<button id="soumettre"> Valider </button>
 		</main>
 
 	</body>
