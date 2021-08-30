@@ -1,0 +1,29 @@
+/* Accueil */
+header {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+}
+
+/* Article et news */
+article {
+	width: 80%;
+	height: auto;
+	font-family: var(--main-font);
+
+	min-height: 40vh;
+}
+
+article:nth-child(even) {
+	text-align: right;
+	float: right;
+}
+
+article:nth-child(odd) {
+	text-align: left;
+	float: left;
+}
+
+main section h3 {
+	padding-bottom: 25px;
+}
