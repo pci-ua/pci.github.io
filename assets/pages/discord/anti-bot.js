@@ -1,5 +1,7 @@
 'use-strict';
 
+MouseEvent.prototype.toString=_=>`${new MouseEvent(undefined)}`;
+
 // Simplification
 const $ = id => document.getElementById(id);
 const X = () => Math.round(Math.random()*100);
