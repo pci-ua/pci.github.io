@@ -1,0 +1,13 @@
+article button {
+	background-color: white;
+	border: none;
+	cursor: pointer;
+	color: black;
+
+	margin: 0.5rem;
+	padding: .2em 1em ;
+	font-weight: bold;
+
+	border-radius: 1rem;
+
+}

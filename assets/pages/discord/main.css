@@ -1,0 +1,53 @@
+/* Contenu centrer */
+main {
+	text-align: center;
+}
+
+/* Espacement, et retrait bordure externe */
+main * {
+	margin-bottom: 1rem;
+	outline: none;
+}
+
+/* Espace de réponse à la question anti bot */
+main #reponse {
+  display: block;
+  margin: auto;
+  padding: 1px;
+  width: 50%;
+  text-align: center;
+
+  color: white;
+  font-family: monospace, sans-serif;
+  font-size: 20pt;
+
+  border: 1px solid grey;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Bouton d'envoie */
+main button {
+  display: block;
+  margin: 1rem auto;
+  font-size: 100%;
+  padding: .5em 1em;
+  background: #6577C2;
+  border: none;
+  border-radius: .2em;
+  cursor: pointer;
+
+  font-family: cursive, serif;
+}
+
+/* Bouton de régénération de l'énigme */
+main #regenerate {
+	width: 2rem;
+	height: 2rem;
+	display: block;
+	margin: 1rem auto ;
+	border: none;
+	background: none;
+	color: teal;
+	font-size: 15pt;
+	cursor: pointer;
+}

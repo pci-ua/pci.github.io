@@ -8,14 +8,12 @@
 
 html {
 	width: 100%;
-	color: white;
 	font-family: var(--main-font);
 }
 
 body {
 	width: 100%;
 	min-height: 100vh;
-	color: white;
 }
 
 h3 {
@@ -25,17 +23,53 @@ h3 {
 
 	font-size: 20px;
 	padding-bottom: 25px;
-
-	/* font-size: larger; */
 }
 
 p {
 	margin:0;
 }
 
+/* La couleur par défaut est le blanc, et on dit explicitement que les a sont par défaut de la même couleur */
+html, a {
+	color: white;
+}
+a:visited {
+	color: #eaeaea;
+}
+
+/* Pour le logo PC[i] écrit en texte */
 .var {
 	color:teal;
 }
 .index {
 	color:orange;
+}
+
+main, main * {
+    background: none;
+}
+
+/* Bande verticale et centrer, responsive avec une marge minimale */
+main {
+	display: block;
+	width: clamp(60%,35rem,Calc(100% - 20px));
+	margin: auto;
+	padding-top: 5em;
+}
+
+/* Marge inter-article */
+article ~ article {
+    margin-top: 3rem !important;
+}
+
+/* Retire la possibilité de selectionnez l'entête, cela peut créer des choses moches. Et style par défaut*/
+header {
+    text-align: center;
+    margin: 1rem;
+
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }

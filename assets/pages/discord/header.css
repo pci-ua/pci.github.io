@@ -1,0 +1,21 @@
+/* Placement des images dans l'entête */
+header {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fit, 8rem);
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+/* Centre les images dans leurs cadres */
+header img {
+	width: 3rem;
+	height: auto;
+	margin: auto;
+}
+
+/* L'image de PC[i] doit être plus grande que le reste */
+header img:nth-child(2) {
+	width: 10rem;
+}
