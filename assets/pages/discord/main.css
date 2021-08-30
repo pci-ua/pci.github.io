@@ -1,33 +1,15 @@
-/** En-tête **/
-header {
-	display: grid;
-	grid-gap: 1rem;
-	grid-template-columns: repeat(auto-fit, 8rem);
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-}
-
-header img {
-	width: 3rem;
-	height: auto;
-	margin: auto;
-}
-
-header img:nth-child(2) {
-	width: 10rem;
-}
-
-/* Contenu */
+/* Contenu centrer */
 main {
-  text-align: center;
+	text-align: center;
 }
 
+/* Espacement, et retrait bordure externe */
 main * {
 	margin-bottom: 1rem;
 	outline: none;
 }
 
+/* Espace de réponse à la question anti bot */
 main #reponse {
   display: block;
   margin: auto;
@@ -43,6 +25,7 @@ main #reponse {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Bouton d'envoie */
 main button {
   display: block;
   margin: 1rem auto;
@@ -56,12 +39,8 @@ main button {
   font-family: cursive, serif;
 }
 
-main a {
-	padding: 0 3rem;
-}
-
-
-main input {
+/* Bouton de régénération de l'énigme */
+main #regenerate {
 	width: 2rem;
 	height: 2rem;
 	display: block;
@@ -71,5 +50,4 @@ main input {
 	color: teal;
 	font-size: 15pt;
 	cursor: pointer;
-
 }
