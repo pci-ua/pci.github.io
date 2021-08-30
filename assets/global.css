@@ -62,8 +62,11 @@ article ~ article {
     margin-top: 3rem !important;
 }
 
-/* Retire la possibilité de selectionnez l'entête, cela peut créer des choses moches. */
+/* Retire la possibilité de selectionnez l'entête, cela peut créer des choses moches. Et style par défaut*/
 header {
+    text-align: center;
+    margin: 1rem;
+
 	user-select: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
