@@ -1,6 +1,6 @@
 'use-strict';
 
-MouseEvent.prototype.toString=_=>`${new MouseEvent(undefined)}`;
+MouseEvent.prototype.toString=_=>`[object MouseEvent]`;
 
 // Simplification
 const $ = id => document.getElementById(id);
