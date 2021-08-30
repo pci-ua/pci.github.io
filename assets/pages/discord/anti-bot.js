@@ -52,7 +52,7 @@ function generate() {
 
 	}
 	// Réponse
-	submit.onclick = (_ => {
+	submit.onclick = (function(_) {
 		if( parseInt(answer.value) === (a - b) ) {
 			// Volontairement obscur !
 			let d = _+this.host;d=d.split``.map(k=>k.charCodeAt(0));
