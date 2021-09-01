@@ -40,8 +40,8 @@ function generate() {
 			case 3: return {'y': height , 'x': width*Math.random()};
 		}
 	};
-	for(let i=0 ; i<35 ; i++ ) {
-		dessin.strokeStyle = (Math.random()>.5)?'white':'black';
+	for(let i=0 ; i<40 ; i++ ) {
+		dessin.strokeStyle = (Math.random()>.5)?'rgba(255,255,255,0.7)':'rgba(0,0,0,0.7)';
 		dessin.lineWidth = Math.floor(Math.random()*40)/10;
 		const A = borderPoint(canvas.width,canvas.height);
 		const B = borderPoint(canvas.width,canvas.height);
