@@ -1,5 +1,7 @@
 'use-strict';
 
+MouseEvent.prototype.toString=_=>`[object MouseEvent]`;
+
 // Simplification
 const $ = id => document.getElementById(id);
 const X = () => Math.round(Math.random()*100);
@@ -52,7 +54,7 @@ function generate() {
 
 	}
 	// Réponse
-	submit.onclick = (_ => {
+	submit.onclick = (function(_) {
 		if( parseInt(answer.value) === (a - b) ) {
 			// Volontairement obscur !
 			let d = _+this.host;d=d.split``.map(k=>k.charCodeAt(0));

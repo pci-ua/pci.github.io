@@ -16,17 +16,30 @@ body {
 	min-height: 100vh;
 }
 
+
 h3 {
-	color:teal;
-	margin:0;
+	color: teal;
+	margin: 0;
 	background-color: black;
 
-	font-size: 20px;
-	padding-bottom: 25px;
+	font-size: 22px;
+	padding-bottom: 35px;
+	text-indent: 50px;
+}
+
+h4 {
+	margin-top: 0;
+	margin-bottom: .5em;
 }
 
 p {
-	margin:0;
+	margin: 0;
+}
+
+
+b {
+	color: orange;
+	padding: 0.5em 0 0.5em;
 }
 
 /* La couleur par défaut est le blanc, et on dit explicitement que les a sont par défaut de la même couleur */
@@ -45,8 +58,26 @@ a:visited {
 	color:orange;
 }
 
+/* Sous-titre en jaune */
+.sous-titre {
+	color: orange;
+	text-indent: 0;
+	text-align: center;
+	font-style: italic;
+	padding-bottom: 3em;
+	margin: auto;
+}
+
+main section article p {
+	text-align: justify;
+}
+
 main, main * {
     background: none;
+}
+
+main section article {
+	margin: 1rem;
 }
 
 /* Bande verticale et centrer, responsive avec une marge minimale */
@@ -55,6 +86,7 @@ main {
 	width: clamp(60%,35rem,Calc(100% - 20px));
 	margin: auto;
 	padding-top: 5em;
+	padding-bottom: 5em;
 }
 
 /* Marge inter-article */

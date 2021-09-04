@@ -15,7 +15,7 @@ article {
 }
 
 article:nth-child(even) {
-	text-align: right;
+	text-align-last: right;
 	float: right;
 }
 
@@ -24,6 +24,6 @@ article:nth-child(odd) {
 	float: left;
 }
 
-main section h3 {
-	padding-bottom: 25px;
+article:nth-child(even) h3 {
+	padding-right: 50px;
 }
