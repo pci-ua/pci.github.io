@@ -14,12 +14,12 @@ article {
 	min-height: 40vh;
 }
 
-article:nth-child(even) {
-	text-align-last: right;
+article:nth-child(even),article:nth-child(even) p {
+	text-align: right;
 	float: right;
 }
 
-article:nth-child(odd) {
+article:nth-child(odd) ,article:nth-child(odd) p {
 	text-align: left;
 	float: left;
 }
