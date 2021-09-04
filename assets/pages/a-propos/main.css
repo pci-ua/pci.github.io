@@ -45,3 +45,12 @@ main section article div {
     align-items: baseline;
     margin-bottom: 2em;
 }
+
+
+article p {
+	font-weight: 350;
+}
+
+article p.major {
+	font-weight: 500;
+}
