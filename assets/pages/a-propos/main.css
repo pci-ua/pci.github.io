@@ -1,0 +1,47 @@
+header img {
+    margin: auto auto;
+    width: 20rem;
+}
+
+main section article p {
+    margin-bottom: 2em;
+}
+
+main section article div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+/* Carte de présentation des membres du bureau */
+.office-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
+.office-card img {
+    width: 10em;
+    border: solid white 2px;
+    border-collapse: collapse;
+}
+
+.office-card span {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.sous-titre {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 19rem);
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 2em;
+}

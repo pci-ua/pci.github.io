@@ -1,0 +1,9 @@
+header img {
+    width: 20rem;
+}
+
+.map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

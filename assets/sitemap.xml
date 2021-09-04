@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://projetcohesion.info/">
   <url>
-    <loc></loc>
-    <lastmod>2021-02-25</lastmod>
+    <name> Accueil </name>
+    <loc>/</loc>
   </url>
   <url>
-    <loc>message-ens/</loc>
-    <lastmod>2021-02-25</lastmod>
+    <name> à propos </name>
+    <loc>/a-propos/</loc>
   </url>
   <url>
-    <loc>CGU/</loc>
-    <lastmod>2021-05-07</lastmod>
+    <name> Assemblée générale </name>
+    <loc>/ag/</loc>
+  </url>
+  <url>
+    <name> contacts </name>
+    <loc>/contacts/</loc>
+  </url>
+  <url>
+    <name> Conditions Générales d'Utilisations </name>
+    <loc>/CGU/</loc>
+  </url>
+  <url>
+    <name> Générateur de signature pour mail pour PC[i] </name>
+    <loc>/generateur/signature-mail/</loc>
   </url>
 </urlset>

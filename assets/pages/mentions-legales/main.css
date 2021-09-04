@@ -1,0 +1,26 @@
+header img {
+    margin: auto auto;
+    width: 20rem;
+}
+
+/* On agrandit l'espace pour avoir un allignement */
+main {
+    width: clamp(65%,35rem,Calc(100% - 20px));
+}
+
+div h3 {
+    text-indent: 0;
+    text-align: center;
+}
+
+.sous-titre {
+    width: 80%;
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 19rem);
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2em;
+}

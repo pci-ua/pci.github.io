@@ -1,0 +1,101 @@
+h1, h2, h3, h4, h5, h6 { background: none; }
+
+hr {
+  background-color: teal;
+  border-color: teal;
+  width: clamp(50%, 35rem, 100%);
+}
+/* En-tête */
+header {
+  min-height: 100vh;
+}
+
+header #goDown {
+  text-align: center;
+  display: block;
+  font-size: 40pt;
+  animation-name: go-down;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes go-down {
+	from {
+		margin-top: 0;
+    margin-bottom: 20px;
+	}
+	50% {
+		margin-top: 20px;
+    margin-bottom: 0;
+	}
+	to {
+		margin-top: 0;
+    margin-bottom: 20px;
+	}
+}
+
+/* Menu */
+nav {
+  width: clamp(50%, 25rem , 100%);
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+nav > ul {
+  list-style-type: '▶ ';
+}
+
+nav > ul >li {
+  margin-bottom: 5px;
+}
+
+nav > ul > li > ul {
+  list-style-type: ' • ';
+}
+
+
+/* Contenu */
+
+main h4 {
+  text-align: center;
+}
+main {
+  width: min(100%, 75rem);
+  margin: auto;
+}
+main div {
+  position: relative;
+  margin-bottom: 3.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+main div * {
+  transition: .5s;
+}
+main div h6 {
+  font-size: 15pt;
+}
+main div:hover > * {
+  font-size: 110%;
+}
+main div:hover > h6 {
+  font-size: 17pt;
+}
+
+main h4 {
+  position: relative;
+  font-size: 20pt;
+}
+
+main * ~ h4:before {
+  display: block;
+  margin: 3rem auto ;
+  margin-top: Calc(3rem + 15rem);
+  height: 1px;
+  width: 50%;
+  content: ' ';
+  background-color: orange
+}
