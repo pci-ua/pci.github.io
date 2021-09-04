@@ -3,32 +3,7 @@ header img {
     width: 20rem;
 }
 
-main section span {
-    color: orange;
-    font-style: italic;
-    margin-bottom: 1em;
-}
-
-main section article h3 {
-    text-indent: 50px;
-}
-
-main section div article h3 {
-    text-align: center;
-    text-indent: 0;
-}
-
-main section article {
-    margin: 1rem;
-}
-
-main section article h3 a {
-    color: teal;
-}
-
 main section article p {
-    text-align: justify;
-    text-indent: 55px;
     margin-bottom: 2em;
 }
 
@@ -43,6 +18,7 @@ main section article div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2em;
 }
 
 .office-card img {

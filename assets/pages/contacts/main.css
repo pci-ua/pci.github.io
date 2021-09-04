@@ -2,38 +2,8 @@ header img {
     width: 20rem;
 }
 
-main section h3 {
-    color: teal;
-    text-indent: 50px;
-    margin-bottom: 1em;
-}
-
-main section article {
-    margin: 1rem;
-}
-
-main section article p {
-    text-align: justify;
-}
-
-main section article a {
-    color: white;
-}
-
 .map {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-main section article h4 {
-    padding: .2em;
-    margin-bottom: .5em;
-}
-
-.sous-titre {
-    color: orange;
-    text-indent: 0;
-    text-align: center;
-    padding-bottom: 2em;
 }
