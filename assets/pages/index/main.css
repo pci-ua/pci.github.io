@@ -14,16 +14,16 @@ article {
 	min-height: 40vh;
 }
 
-article:nth-child(even) {
+article:nth-child(even),article:nth-child(even) p {
 	text-align: right;
 	float: right;
 }
 
-article:nth-child(odd) {
+article:nth-child(odd) ,article:nth-child(odd) p {
 	text-align: left;
 	float: left;
 }
 
-main section h3 {
-	padding-bottom: 25px;
+article:nth-child(even) h3 {
+	padding-right: 50px;
 }

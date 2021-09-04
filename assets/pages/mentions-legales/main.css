@@ -3,32 +3,18 @@ header img {
     width: 20rem;
 }
 
-main section span {
-    color: orange;
-    font-style: italic;
-    margin-bottom: 1em;
+/* On agrandit l'espace pour avoir un allignement */
+main {
+    width: clamp(65%,35rem,Calc(100% - 20px));
 }
 
-main section article {
-    margin: 1rem;
-}
-
-main section article a {
-    color: white;
-}
-
-main section article h3 a {
-    color: teal;
-}
-
-main section article p {
-    text-align: justify;
+div h3 {
+    text-indent: 0;
+    text-align: center;
 }
 
 .sous-titre {
-    width: 90%;
-    text-align: center;
-    margin: auto;
+    width: 80%;
 }
 
 .flex {

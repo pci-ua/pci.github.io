@@ -33,6 +33,7 @@ footer h3 {
 	background-color: transparent;
 	font-family: var(--second-font);
 	font-size: 18pt;
+	text-indent: 0;
 }
 
 footer * img {
