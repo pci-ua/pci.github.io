@@ -1,5 +1,7 @@
 window.addEventListener('load' , () => {
-    fetch('https://pci.kher.nl/messages.php')
+    /* Lien vers le script d'origine */
+    //fetch('https://pci.kher.nl/messages.php')
+    fetch('./data.json')
       .then( r => r.json() )
       .then( obj => {
         if(obj.status === "ok") {

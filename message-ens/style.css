@@ -15,8 +15,7 @@ header i {
 /* Message part */
 .message {
   display: block;
-  width: 80vw;
-  margin: 5rem 10%;
+  margin: 5rem 0;
 }
 
 .message h1 {
