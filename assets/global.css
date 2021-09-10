@@ -73,7 +73,7 @@ main section article p {
 }
 
 main, main * {
-    background: none;
+	background: none;
 }
 
 main section article {
@@ -91,13 +91,13 @@ main {
 
 /* Marge inter-article */
 article ~ article {
-    margin-top: 3rem !important;
+	margin-top: 3rem !important;
 }
 
 /* Retire la possibilité de selectionnez l'entête, cela peut créer des choses moches. Et style par défaut*/
 header {
-    text-align: center;
-    margin: 1rem;
+	text-align: center;
+	margin: 1rem;
 
 	user-select: none;
 	-webkit-user-select: none;
