@@ -54,3 +54,10 @@ article p {
 article p.major {
 	font-weight: 500;
 }
+
+
+#bureau {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 12rem);
+}
+
