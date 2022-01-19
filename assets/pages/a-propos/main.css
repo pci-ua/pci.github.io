@@ -13,51 +13,54 @@ main section article div {
     align-items: baseline;
 }
 
+
 /* Carte de présentation des membres du bureau */
+
 .office-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2em;
+    padding: 1em;
+    flex-basis: 16em;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 6fr 2fr;
+    grid-template-columns: 1fr;
 }
 
 .office-card img {
-    width: 10em;
-    border: solid white 2px;
-    border-collapse: collapse;
+    max-width: 100%;
+    grid-row: 2;
+    height: auto;
 }
 
-.office-card span {
-    margin-top: .5em;
-    margin-bottom: .5em;
-}
-
-.sous-titre {
-    width: 90%;
+.office-card h4 {
+    grid-row: 1;
     text-align: center;
-    margin: auto;
 }
 
-.flex {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 19rem);
-    justify-content: space-around;
-    align-items: baseline;
-    margin-bottom: 2em;
+.office-card .card-bottom {
+    grid-row: 3;
+    text-align: center;
+    width: 100;
 }
-
 
 article p {
-	font-weight: 350;
+    font-weight: 350;
 }
 
 article p.major {
-	font-weight: 500;
+    font-weight: 500;
 }
 
-
-#bureau {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, 12rem);
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+#bureau {}

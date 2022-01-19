@@ -3,66 +3,64 @@
 
 <head>
     <!-- -->
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title> PC[i] -Contacts </title>
 
-    <link rel="icon" href="/assets/icon.png" type="image/png"/>
-    <link rel="stylesheet" href="/assets/global.css" type="text/css"/>
+    <link rel="icon" href="/assets/icon.png" type="image/png" />
+    <link rel="stylesheet" href="/assets/global.css" type="text/css" />
 
     <!-- Background -->
     <script src="/assets/modules/background/background.js"></script>
-    <link rel="stylesheet" href="/assets/modules/background/background.css" type="text/css"/>
+    <link rel="stylesheet" href="/assets/modules/background/background.css" type="text/css" />
 
     <!-- Footer -->
     <script src="/assets/modules/footer/footer.js"></script>
-    <link rel="stylesheet" href="/assets/modules/footer/footer.css" type="text/css"/>
+    <link rel="stylesheet" href="/assets/modules/footer/footer.css" type="text/css" />
 
     <!-- Local -->
-    <link rel="stylesheet" href="/assets/pages/contacts/main.css" type="text/css"/>
+    <link rel="stylesheet" href="/assets/pages/contacts/main.css" type="text/css" />
 </head>
 
 <body>
-<header>
-    <a href="/">
-        <img src="/assets/icon.png" alt="PC[i]"/>
-    </a>
+    <header>
+        <a href="/">
+            <img src="/assets/icon.png" alt="PC[i]" />
+        </a>
 
-    <h1> Contacts </h1>
-</header>
+        <h1> Contacts </h1>
+    </header>
 
-<main>
-    <section>
-        <article>
-            <div class="map">
-                <div>
-                    <h3>Contacts Université d'Angers</h3>
-                    <!-- À compléter plus tars avec les informations vers le local -->
-                    <h4>Local de PC[i]</h4>
+    <main>
+        <section>
+            <article>
+                <div class="map">
+                    <div>
+                        <h3>Contacts Université d'Angers</h3>
+                        <!-- À compléter plus tars avec les informations vers le local -->
+                        <h4>Local de PC[i]</h4>
 
-                    <p>
-                        Faculté des Sciences <br/>
-                        2 Boulevard de Lavoisier <br/>
-                        49000 Angers France <br/> <br/>
+                        <p>
+                            Faculté des Sciences <br/> 2 Boulevard de Lavoisier <br/> 49000 Angers France <br/> <br/> Président : Matéo Grimaud
+                        </p>
+                    </div>
 
-                        Président : Baptiste Brinon
-                    </p>
+                    <iframe src="./blank-loading.html" width="400" height="300" style="border: none;" allowfullscreen="" loading="lazy" id="location-gmap"></iframe>
+                    <script>
+                        setTimeout(_ => document.querySelector('#location-gmap').src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.4830980384518!2d-0.6022814844964389!3d47.48050147917663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48087f1bc2f35b47%3A0xe3ea8379948a1e65!2sFacult%C3%A9%20des%20Sciences%2C%2049000%20Angers!5e0!3m2!1sen!2sfr!4v1627135003054!5m2!1sen!2sfr', 10);
+                    </script>
+
                 </div>
+            </article>
 
-                <iframe src="./blank-loading.html" width="400" height="300" style="border: none;" allowfullscreen="" loading="lazy" id="location-gmap"></iframe>
-                <script> setTimeout(_=>document.querySelector('#location-gmap').src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.4830980384518!2d-0.6022814844964389!3d47.48050147917663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48087f1bc2f35b47%3A0xe3ea8379948a1e65!2sFacult%C3%A9%20des%20Sciences%2C%2049000%20Angers!5e0!3m2!1sen!2sfr!4v1627135003054!5m2!1sen!2sfr',10); </script>
+            <article>
+                <h3>Une question ?</h3>
 
-            </div>
-        </article>
+                <p>
+                    Vous pouvez nous écrire à l'adresse <a href="mailto:contact@projetcohesion.info">contact@projetcohesion.info</a> <br/> Si vous devez contacter un membre spécifique du bureau, vous pouvez lui écrire directement à son adresse que vous
+                    retrouverez <a href="/a-propos">ici</a>.
+                </p>
+            </article>
 
-        <article>
-            <h3>Une question ?</h3>
-
-            <p>
-                Vous pouvez nous écrire à l'adresse <a href="mailto:contact@projetcohesion.info">contact@projetcohesion.info</a> <br/>
-                Si vous devez contacter un membre spécifique du bureau, vous pouvez lui écrire directement à son adresse que vous retrouverez <a href="/a-propos">ici</a>.
-            </p>
-        </article>
-
-        <!-- Ajout possible des réseaux -->
-    </section>
-</main>
+            <!-- Ajout possible des réseaux -->
+        </section>
+    </main>
