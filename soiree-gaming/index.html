@@ -80,7 +80,7 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-			}
+			} /*
 			.fake-button:not(:hover)::after {
 				content: ' ';
 				background-image: url('./cursor.png');
@@ -93,6 +93,20 @@
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
+			} */
+			.fake-button::after {
+				content: 'COMPLET';
+				display: block;
+				position: absolute;
+				top: 50%;
+				right: -50%;
+				transform: translate(-50%,-50%) rotate(-30deg);
+				color: red;
+				border: 4px solid red;
+				border-radius: .4rem;
+				padding: .5rem;
+				font-weight: 900;
+				font-family: impact;
 			}
 			.fake-button::before {
 				content: ' ';
