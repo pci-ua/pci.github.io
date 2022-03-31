@@ -2,6 +2,7 @@
 
 :root {
 	--neon-color: rgb(0, 238, 255);
+	--neon-size: .2rem;
 	font-family: 'Red Hat Mono', monospace;
 }
 .neon {
@@ -10,16 +11,16 @@
 	border: none;
 	border-radius: .25rem;
 
-
+	--scale-glow: 8;
 	box-shadow:
-0 0 4px #fff,
-0 0 11px #fff,
-0 0 19px #fff,
-0 0 40px var(--neon-color),
-0 0 80px var(--neon-color),
-0 0 90px var(--neon-color),
-0 0 100px var(--neon-color),
-0 0 150px var(--neon-color);
+0 0 Calc(4px / var(--scale-glow)) #fff,
+0 0 Calc(11px / var(--scale-glow)) #fff,
+0 0 Calc(19px / var(--scale-glow)) #fff,
+0 0 Calc(40px / var(--scale-glow)) var(--neon-color),
+0 0 Calc(80px / var(--scale-glow)) var(--neon-color),
+0 0 Calc(90px / var(--scale-glow)) var(--neon-color),
+0 0 Calc(100px / var(--scale-glow)) var(--neon-color),
+0 0 Calc(150px / var(--scale-glow)) var(--neon-color);
 	background-color: white;
 }
 .neon-text {
@@ -77,9 +78,9 @@ main {
 	display: grid;
 	grid-template: 
 		"a b c" 1fr
-		"d d d" .5rem
+		"d d d" var(--neon-size)
 		"e e e" 1fr
-		/ 1fr .5rem 1fr;
+		/ 1fr var(--neon-size) 1fr;
 	grid-gap: 1rem;
 	margin: 1rem;
 	text-align: center;
@@ -108,6 +109,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin: 3rem 0;
 }
 
 footer img {
@@ -169,5 +171,5 @@ article {
 	display: block;
 	width: 98%;
 	margin: auto;
-	height: .5rem;
+	height: var(--neon-size);
 }
