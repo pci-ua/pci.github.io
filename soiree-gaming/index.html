@@ -28,6 +28,34 @@
 		</header>
 
 		<main>
+
+			<section>
+				<article>
+					<h3> Soirée </h3>
+
+					<p> Vous pouvez venir voir et/ou participer aux différentes activités listées ci-dessous : </p>
+					<ul>
+						<li>Tournoi MarioKart (complet)</li>
+						<li>Tournoi FIFA (sur inscription)</li>
+						<li>Borne d'arcade et jeu retro</li>
+						<li>Bar par PC[i]</li>
+						<li>Food truck</li>
+					</ul>
+					<p> et d'autres activités et services !</p>
+				</article>
+
+				<article>
+					<h3> Comment venir ? </h3>
+					<iframe src="./la-parenthese/" width="250" height="250"></iframe>
+				</article>
+			</section>
+
+			<section>
+				<article>
+				<h3> Bar de PC[i] </h3>
+				<iframe src="./le-bar/" width="1885" height="2100" style="width: 18.85cm; height: 21cm;"></iframe>
+			</article>
+			</section>
 			<h3> Règlement Mario Kart </h3>
 
 			<p>
@@ -47,7 +75,7 @@
 
 				<p>Chaque coupe comporte 4 courses et les joueurs sont ordonnés par leurs scores cumulés. </p>
 
-				<p>Pour les deux premières phases chaque joueur propose une carte, elles seront ensuite jouées dans un ordre aléatoire.<br/>
+				<p>Pour les deux premières phases, chaque joueur propose une carte, elles seront ensuite jouées dans un ordre aléatoire.<br/>
 					En demi-finale et en final le choix des cartes est purement aléatoire !</p>
 
 				<p>La version retenu pour Mario kart est Mario Kart 8 Deluxe, les IA seront présentes et les parties seront  en 150cc et la finale en miroir ( 150cc mais carte "à l'envers"). Les autres réglages seront ceux par défaut du jeu. Aucune restriction n'est imposée.</p>
@@ -59,6 +87,22 @@
 			
 			<h3 class="fake-button"> <a href="https://forms.gle/T6LREhFNH5MNfVWY7"> Inscription MarioKart </a> </h3>
 			<style>
+			iframe {
+				border: none;
+			}
+			section {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+
+			section:nth-child(1) article {
+				display: block;
+				width: 20rem;
+				margin: 0 8rem;
+			}
+
 			.fake-button {
 				text-align: center;
 				text-indent: 0 !important;
@@ -80,7 +124,7 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-			}
+			} /*
 			.fake-button:not(:hover)::after {
 				content: ' ';
 				background-image: url('./cursor.png');
@@ -93,6 +137,20 @@
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
+			} */
+			.fake-button::after {
+				content: 'COMPLET';
+				display: block;
+				position: absolute;
+				top: 50%;
+				right: -50%;
+				transform: translate(-50%,-50%) rotate(-30deg);
+				color: red;
+				border: 4px solid red;
+				border-radius: .4rem;
+				padding: .5rem;
+				font-weight: 900;
+				font-family: impact;
 			}
 			.fake-button::before {
 				content: ' ';
