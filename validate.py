@@ -6,7 +6,22 @@ import os
 hadSomeWarn=False
 hadSomeErr=False
 
+def validateSheets(path: str) -> None:
+	print("\033[104;97m CSS \033[0m ",end="")
+
+	with open( path , 'rb' ) as f:
+		response = requests.post('https://jigsaw.w3.org/css-validator/#validate_by_upload', files={'index.html': f})
+
+	passed = ( re.search('<div id="congrats">',response.text) != None )
+	failed = ( re.search('<div id="errors">',response.text) != None )
+
+	if failed:
+		print( "\033[91m ✘ Failed for %s " % (path) )
+	else:
+		print( "\033[92m ✓ %s" % (path) )
+
 def validatePages(path: str) -> None:
+	print("\033[104;97m HTML \033[0m",end="")
 
 	with open( path , 'rb' ) as f:
 		response = requests.post('https://validator.w3.org/nu/#file', files={'index.html': f})
@@ -46,17 +61,20 @@ def validatePages(path: str) -> None:
 		print( "\033[92m ✓ %s" % (path) )
 
 
-def findPages(path: str) -> None:
+def findFiles(path: str) -> None:
 	for fPath in os.listdir(path):
 		fullPath=path+"/"+fPath
 		if os.path.isdir(fullPath):
-			findPages(fullPath)
+			findFiles(fullPath)
 		else:
 			if re.match('.*\.html$',fPath) != None :
 				if re.match('.*assets',fullPath) == None :
-					validatePages(path+"/"+fPath)
+					validatePages(fullPath)
+			if re.match('.*\.css$',fPath) != None :
+				validateSheets(fullPath)
 
-findPages('.')
+	
+findFiles('.')
 
 if hadSomeErr:
 	sys.exit(2)
