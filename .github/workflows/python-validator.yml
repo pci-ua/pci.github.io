@@ -1,6 +1,6 @@
 # This workflow will check for HTML and CSS validity across the repository via a Python script and the W3C website
 
-name: Upload Python Package
+name: "W3C : HTML+CSS Validator"
 
 on:
   push:
