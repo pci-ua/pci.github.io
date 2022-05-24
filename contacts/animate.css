@@ -1,0 +1,39 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: none;
+    }
+    svg, h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    @keyframes alpha {
+      from { transform: translate(-50%,-50%) rotate(0); }
+      to { transform: translate(-50%,-50%) rotate(360deg);}
+    }
+    #alpha {
+      animation: alpha 4s infinite linear;
+    }
+    @keyframes beta {
+      from { transform: translate(-50%,-50%) rotate(0); }
+      to { transform: translate(-50%,-50%) rotate(360deg);}
+    }
+    #beta {
+      animation: beta 2s infinite linear;
+    }
+    @keyframes omega {
+      from { transform: translate(-50%,-50%) rotate(0); }
+      to { transform: translate(-50%,-50%) rotate(360deg);}
+    }
+    #omega {
+      animation: omega 1s infinite linear;
+    }
+    h1 {
+      color: white;
+      font-size: 11pt;
+      margin: 0;
+      padding: 0;
+    }
