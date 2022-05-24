@@ -44,6 +44,7 @@ def validatePages(path: str) -> None:
 			print( "\033[93m ⚠ Failed for %s with : " % (path) )
 			print( "\033[93m %u warnings ! " % warnCount )
 			print( "\033[92m 0 errors ! " )
+			print( "\033[0m" )
 
 		else:
 			print( "\033[91m ✘ Failed for %s with : " % (path) )
@@ -58,7 +59,7 @@ def validatePages(path: str) -> None:
 			withoutStrangeChar = re.sub('[^a-zA-Z0-9 :,!.-]', '',  withoutEntity )
 			print( "\t" + (withoutStrangeChar if (len(withoutStrangeChar)<90) else (withoutStrangeChar[:87]+'...')) )
 	else:
-		print( "\033[92m ✓ %s" % (path) )
+		print( "\033[92m ✓ %s \033[0m" % (path) )
 
 
 def findFiles(path: str) -> None:
@@ -80,3 +81,5 @@ if hadSomeErr:
 	sys.exit(2)
 if hadSomeWarn:
 	sys.exit(1)
+
+print( "" , end="\033[0m" )
