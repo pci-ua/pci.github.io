@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&family=Teko:wght@400;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	text-decoration: none;
+	font-family: 'Anek Telugu', sans-serif;
+	overflow: hidden;
+
+}
+
+html, body {
+	min-width: 100vw;
+	min-height: 100vh;
+
+	background-color: black;
+}
+
+#rank {
+	display: grid;
+	grid-template-columns: repeat(4, 22vw);
+	grid-template-rows: 70vh;
+	grid-gap: 2rem;
+
+	min-width: 100vw;
+	min-height: 100vh;
+
+	justify-content: space-evenly;
+	align-content: center;
+
+	font-size: 12pt;
+}
+
+#rank > * {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+
+	position: relative;
+	color: white;
+}
+
+#rank canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+}
+
+#rank #thread {	
+	background-color: rgb(55, 176, 38);
+	background: linear-gradient(337deg, rgb(55, 176, 38) 0%, rgb(22, 250, 47) 35%, rgb(33, 128, 7) 79%, rgb(30, 97, 11) 100%);
+}
+
+#rank #member {	background-color: #005050;}
+
+#rank #os {
+	background-color: gold;
+	background: rgb(185,82,0);
+	background: linear-gradient(337deg, rgba(185,82,0,1) 0%, rgba(255,212,0,1) 35%, rgba(255,160,0,1) 79%, rgba(255,216,0,1) 100%);
+}
+
+#rank #kernel {
+	background-color: blueviolet;
+	background: rgb(122,38,176);
+	background: linear-gradient(337deg, rgba(122,38,176,1) 0%, rgba(142,22,250,1) 35%, rgba(70,7,128,1) 79%, rgba(55,11,97,1) 100%); 
+}
+
+#rank h2 {
+	text-align: center;
+	color: white;
+    font-family: 'Teko', sans-serif;
+	font-size: 30pt;
+
+	margin: 0.8rem;
+}
+
+#rank article {
+	padding: 1rem 0;
+	position: relative;
+}
+
+#rank article ~ article:before {
+	content: ' ';
+	background-color: white;
+
+	display: block;
+	height: 1px;
+	width: 30%;
+
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#rank article {
+	display: block;
+	text-align: center;
+}
+
+#rank b {
+	font-weight: normal;
+}
+#rank b:before {
+	content: '✓';
+	color: lightgreen;
+	font-weight: bold;
+	font-size: 130%;
+}
+
+
+header {
+	width: 80vw;
+	margin: auto;
+}
+
+header img {
+	height: 10vh;
+	margin: auto;
+	display: block;
+}
+
+article:nth-child(1) > h2 {
+	margin-bottom: 0 !important;
+}
+
+article:nth-child(1) > h2 ~ span {
+	font-style: italic;
+}
+
+#sub {
+	overflow: visible;
+}
+#sub button {
+	margin: auto;
+	background-color: rgb(101, 241, 101);
+    font-family: 'Teko', sans-serif;
+	letter-spacing: .15ch;
+	font-size: 16pt;
+	z-index: 999;
+	position: relative;
+	cursor: pointer;
+	
+	background-color: #222;
+	color: white;
+	padding: .2rem 1rem ;
+
+	margin: auto;
+	display: block;
+
+	overflow: visible;
+	position: relative;
+	
+	filter: hue-rotate(40deg);
+
+	box-shadow: rgb(173, 230, 199) 0px 0px 1px 1px, rgb(0, 255, 76) 0px 0px 2px 2px, white 0px 0px 8px;
+}
+
+#sub button::after,#sub button::before {
+	content: '';
+	width: 6px;
+	height: 6px;
+	transition: .6s;
+}
+
+
+#sub button::before {
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: darkgreen;
+}
+
+#sub button::after {
+	transform: translate(50%, 50%);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: darkgreen;
+}
+
+#sub:hover button::before {
+	left: 100%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	box-shadow: rgb(173, 230, 199) 0px 0px 1px 1px, rgb(0, 255, 76) 0px 0px 2px 2px, white 0px 0px 8px;
+	border: 1px solid rgb(173, 230, 187);
+	background-color: rgb(0, 255, 0);
+}
+#sub:hover button::after {
+	right: 100%;
+	transform: translate(50%, 50%) rotate(45deg);
+	box-shadow: rgb(173, 230, 199) 0px 0px 1px 1px, rgb(0, 255, 76) 0px 0px 2px 2px, white 0px 0px 8px;
+	border: 1px solid rgb(173, 230, 187);
+	background-color: rgb(0, 255, 0);
+}
+
+#sub {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	z-index: 999;
+}
+
+#member {
+	position: relative;
+}
