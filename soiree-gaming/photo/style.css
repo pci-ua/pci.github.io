@@ -1,0 +1,58 @@
+
+main {
+	display: grid;
+	grid-template:
+	"x y z" 20rem
+	"a b c" 20rem
+	"a d e" 20rem
+	"k l m" 20rem
+	"g h f" 20rem
+	"i j f" 20rem
+	"O O O" 20rem
+	"O O O" 20rem
+	/ 1fr 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 0 2.2rem;
+}
+
+main img {
+	width: 100%;
+	cursor: pointer;
+}
+#img-1 { grid-area: a; }
+#img-3 { grid-area: x; }
+#img-4 { grid-area: y; }
+#img-5 { grid-area: z; }
+#img-6 { grid-area: b; }
+#img-7 { grid-area: c; }
+#img-8 { grid-area: d; }
+#img-2 { grid-area: f; }
+#img-9 { grid-area: e; }
+#img-10 { grid-area: g; }
+#img-11 { grid-area: h; }
+#img-12 { grid-area: i; }
+#img-13 { grid-area: j; }
+#img-14 { grid-area: k; }
+#img-15 { grid-area: l; }
+#img-16 { grid-area: m; }
+#img-17 { grid-area: O; }
+
+
+@media (max-width: 18cm) {
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		grid-gap: 1rem;
+	}
+}
+
+h1 {
+	font-family: var(--second-font);
+	font-size: 30pt;
+}
+body > * {
+	text-align: center;
+}

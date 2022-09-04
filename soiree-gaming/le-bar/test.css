@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+
+:root {
+	--neon-color: rgb(0, 238, 255);
+	--neon-size: .2rem;
+	font-family: 'Red Hat Mono', monospace;
+}
+.neon {
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-radius: .25rem;
+
+	--scale-glow: 8;
+	box-shadow:
+0 0 Calc(4px / var(--scale-glow)) #fff,
+0 0 Calc(11px / var(--scale-glow)) #fff,
+0 0 Calc(19px / var(--scale-glow)) #fff,
+0 0 Calc(40px / var(--scale-glow)) var(--neon-color),
+0 0 Calc(80px / var(--scale-glow)) var(--neon-color),
+0 0 Calc(90px / var(--scale-glow)) var(--neon-color),
+0 0 Calc(100px / var(--scale-glow)) var(--neon-color),
+0 0 Calc(150px / var(--scale-glow)) var(--neon-color);
+	background-color: white;
+}
+.neon-text {
+
+
+	text-shadow:
+0 0 4px #fff,
+0 0 11px #fff,
+0 0 19px #fff,
+0 0 40px orange,
+0 0 80px orange,
+0 0 90px orange,
+0 0 100px orange,
+0 0 150px orange;
+color: white;
+}
+
+header img {
+	margin: auto;
+	display: block;
+	width: 11rem;
+}
+
+/* Scenario */
+html {
+	min-width: 100vw;
+	min-height: 100vh;
+
+	padding: 0;
+	margin: 0;
+	border: none;
+
+	background-color: rgb(54, 53, 53);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	width : 18.85cm;
+	height: 21cm;
+
+	padding: 0;
+	margin: 0;
+	border: none;
+
+	background-color: #000;
+	color: #fff;
+
+
+}
+
+main {
+	display: grid;
+	grid-template: 
+		"a b c" 1fr
+		"d d d" var(--neon-size)
+		"e e e" 1fr
+		/ 1fr var(--neon-size) 1fr;
+	grid-gap: 1rem;
+	margin: 1rem;
+	text-align: center;
+}
+
+main #alcool {
+	grid-area: a;
+}
+
+main #soft {
+	grid-area: c;
+}
+
+main #dessert {
+	grid-area: e;
+}
+
+main .neon:nth-child(1) {
+	grid-area: b;
+}
+main .neon:nth-child(2) {
+	grid-area: d;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 3rem 0;
+}
+
+footer img {
+	height: 3rem;
+	filter: invert();
+	margin: 1rem;
+}
+
+footer div {
+
+	position: relative;
+}
+
+footer div.accepted:after {
+	content: '✓';
+	color: lime;
+	font-weight: bold;
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+	font-size: 20pt;
+}
+footer div.refused:after {
+	content: '✗';
+	color: red;
+	font-weight: bold;
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+	font-size: 20pt;
+}
+
+body {
+	position: relative;
+}
+
+aside {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 4rem 2rem;
+	color: orange;
+	transform: rotate(-30deg);
+	text-align: center;
+}
+
+article {
+	display: grid;
+	grid-template-columns: 10rem 4rem 6rem;
+	justify-content: center;
+}
+
+#dessert article {
+	grid-template-columns: 12rem 6rem;
+
+}
+
+.neon-transi {
+	display: block;
+	width: 98%;
+	margin: auto;
+	height: var(--neon-size);
+}

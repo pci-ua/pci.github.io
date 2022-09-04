@@ -1,0 +1,29 @@
+# This workflow will check for HTML and CSS validity across the repository via a Python script and the W3C website
+
+name: "W3C : HTML+CSS Validator"
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: python3 -m pip install requests
+    - name: Run the validation
+      run: python3 validate.py
