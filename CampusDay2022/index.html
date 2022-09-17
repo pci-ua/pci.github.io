@@ -1,408 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr-FR" dir="ltr">
 <head>
-    <!-- -->
-    <meta charset="utf-8"/>
-    <title> PC[i] - CampusDay2022 </title>
+	<meta charset="utf-8"/>
+	<title> PC[i] - CampusDay2022 </title>
 
-    <link rel="icon" href="/assets/icon.png" type="image/png"/>
-    <link rel="stylesheet" href="/assets/global.css" type="text/css"/>
+	<link rel="icon" href="/assets/icon.png" type="image/png"/>
+	<link rel="stylesheet" href="/assets/global.css" type="text/css"/>
 
+
+	<link rel="stylesheet" href="./style.css" type="text/css"/>
+	<script src="./script.js" defer ></script>
 
 </head>
 <body>
-    
-<style>
-* {
-    border: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-html, body, canvas {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    background: none;
-}
+	<header>
+		<canvas></canvas>
+		<a class="pci" href="/"><img src="/assets/icon.png" alt="PC[i]" class="pci"/></a>
+		<a class="event" href="https://campusday.univ-angers.fr/"><img src="/assets/images/CampusDay2022.png" alt="CampusDay2022" class="event" /></a>
+		<a class="playstore" href="./"><img src="/assets/images/GoogleStore.png" alt="get android" class="playstore"/></a>
+		<a class="apk" href="http://leria-etud.univ-angers.fr/~matoulon/Arcadua.apk"><img src="./DownloadAPK.png" alt="get apk" class="apk"/></a>
+    </header>
 
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(0turn, #7fa881, #ffffff);
-    z-index: -1;
-}
+	<main>
+			
 
-header {
-    display: grid;
-    grid-template: 
-            "a a a" 80vh
-            "c b d" 40px / 4rem auto 4rem;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        align-self: center;
-        grid-gap: 2rem;
-    height: 100vh;
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
+		<h1> Application Arcad'ua </h1>
 
-header img { height: 100px; }
-header > .pci { grid-area: b; }
-header > .event { grid-area: a; }
-header > .playstore { grid-area: c; }
-header > .apk { grid-area: d; }
-header .event { height: 80vh; }
+		<strong> Découvrez vos BDE sur le campus universitaire avec un jeu fun. </strong>
 
-main::before {
-    content: ' ';
-    width: 100vw;
-    height: 5rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(#4f0e0e,#4f0e0e00);
-}
-main {
-    background-color: #080808;
-    min-height: 100vh;
-    width: 100vw;
-    position: relative;
-}
+		<section>
+			<h4> Règles de confidentialité </h4>
 
-body {
-  scrollbar-color:  #4ab54f transparent;
-  scrollbar-width: normal;
-}
+			<p> Aucune donnée n'est recoltée par l'application. </p>
+		</section>
 
-main :is(h1,strong) {
-    text-align: center;
-}
+		<section>
+			<h4> Crédits </h4>
 
-main section {
-    margin: 5rem 0;
-}
-</style>
+			<ul>
+				<li> Level Design : Matéo GRIMAUD </li>
+				<li> Développement : Mathieu TOULON </li>
+				<li> Direction Artistique : Mathieu TOULON </li>
+				<li> Financemnt : CVEC </li>
+			</ul>
+		</section>
 
+		<section>
+			<h4> Droits </h4>
 
-		<header>
-            <canvas></canvas>
-			<a class="pci" href="/"><img src="/assets/icon.png" alt="PC[i]" class="pci"/></a>
-			<a class="event" href="https://campusday.univ-angers.fr/"><img src="/assets/images/CampusDay2022.png" alt="CampusDay2022" class="event" /></a>
-			<a class="playstore" href="./"><img src="/assets/images/GoogleStore.png" alt="get android" class="playstore"/></a>
-			<a class="apk" href="http://leria-etud.univ-angers.fr/~matoulon/Arcadua.apk"><img src="./DownloadAPK.png" alt="get apk" class="apk"/></a>
+			<p> Toutes les images sont des créations originales. </p>
+			<p> À l'exception des logos d'associations, avec leur accord pour l'utilisation. </p>
+			<p> À l'exception du logo de l'université, pour lequel l'utilisation est accordé par le label UA. </p>
+		</section>
 
-        </header>
+	</main>
+	<script>
 
-        <main>
-            
-
-            <h1> Application Arcad'ua </h1>
-
-            <strong> Découvrez vos BDE sur le campus universitaire avec un jeu fun. </strong>
-
-            <section>
-                <h4> Règles de confidentialité </h4>
-
-                <p> Aucune donnée n'est recoltée par l'application. </p>
-            </section>
-
-            <section>
-                <h4> Crédits </h4>
-
-                <ul>
-                    <li> Level Design : Matéo GRIMAUD </li>
-                    <li> Développement : Mathieu TOULON </li>
-                    <li> Direction Artistique : Mathieu TOULON </li>
-                    <li> Financemnt : CVEC </li>
-                </ul>
-            </section>
-
-            <section>
-                <h4> Droits </h4>
-
-                <p> Toutes les images sont des créations originales. </p>
-                <p> À l'exception des logos d'associations, avec leur accord pour l'utilisation. </p>
-                <p> À l'exception du logo de l'université, pour lequel l'utilisation est accordé par le label UA. </p>
-            </section>
-
-        </main>
-    <script>
-
-function bezierAtT(t,xa,ya,xb,yb,xc,yc,xd,yd) {
-    return [
-    ((1-t)**3)*xa + ((1-t)**2)*xb*t*3 + 3*(1-t)*(t**2)*xc + (t**3)*xd
-     ,
-     ((1-t)**3)*ya + ((1-t)**2)*yb*t*3 + 3*(1-t)*(t**2)*yc + (t**3)*yd
-    ]
-}
-const canvas = document.querySelector('canvas');
-const dessin = canvas.getContext('2d');
-
-canvas.width = window.innerWidth
-canvas.height = window.innerHeight
-
-const COUNT = 15;
-
-let groundPos = [... new Array(COUNT)].map( () => Math.random() * canvas.width )
-let branchHeight = [... new Array(COUNT)].map( () => (Math.random() * canvas.height * 0.6   ) + (canvas.height*0.2) )
-
-let FRAME = 0;
-
-let windOfset = [... new Array(COUNT)].map( () => [Math.random(),Math.random(),Math.random()] )
-
-function draw() {
-
-    FRAME+=0.02;
-
-    // Clear
-    dessin.clearRect(0,0,canvas.width,canvas.height)
-
-    // Branche
-    dessin.strokeStyle = '#207024'
-    dessin.beginPath();
-    for(let i=0 ; i<COUNT ; i++) {
-        dessin.moveTo( groundPos[i] , canvas.height )
-        dessin.bezierCurveTo( 
-            groundPos[i] + 80*Math.sin(FRAME+windOfset[i][0]), canvas.height - 1*branchHeight[i]/3,
-            groundPos[i] + 80*Math.cos(FRAME+windOfset[i][1]), canvas.height - 2*branchHeight[i]/3,
-            groundPos[i] + 80*Math.cos(FRAME+windOfset[i][2]), canvas.height - 3*branchHeight[i]/3)
-    }
-    dessin.stroke();
-    dessin.closePath();
-
-    // Fleur
-    dessin.strokeStyle = '#ffffff'
-    for(let i=0 ; i<COUNT ; i++) {
-        const x =  groundPos[i] + 80*Math.cos(FRAME+windOfset[i][2]);
-        const y =  canvas.height - 3*branchHeight[i]/3;
-        if( i <COUNT * 0.7 ) {
-            for(let k=0;k<5;k++) {
-                dessin.fillStyle = (i%2)?'#202470':'#8285b5'
-                dessin.beginPath();
-                dessin.moveTo( x , y )
-                dessin.bezierCurveTo( 
-                    
-
-                        x + Math.cos(Math.PI*2*k/5)*25 + Math.cos( (Math.PI/2) + Math.PI*2*k/5 )*10
-                        ,
-                        y + Math.sin(Math.PI*2*k/5)*25 + Math.sin( (Math.PI/2) + Math.PI*2*k/5 )*10
-                    
-                    
-
-                    ,
-
-                        x + Math.cos(Math.PI*2*k/5)*35 + Math.cos( (Math.PI/2) + Math.PI*2*k/5 )*10
-                        ,
-                        y + Math.sin(Math.PI*2*k/5)*35 + Math.sin( (Math.PI/2) + Math.PI*2*k/5 )*10
-                    
-                    ,
-
-
-                        x+Math.cos(Math.PI*2*k/5)*50
-                        ,
-                        y+Math.sin(Math.PI*2*k/5)*50
-                )
-                dessin.moveTo( x , y )
-                dessin.bezierCurveTo( 
-                    
-
-                        x + Math.cos(Math.PI*2*k/5)*25 - Math.cos( (Math.PI/2) + Math.PI*2*k/5 )*10
-                        ,
-                        y + Math.sin(Math.PI*2*k/5)*25 - Math.sin( (Math.PI/2) + Math.PI*2*k/5 )*10
-                    
-                    
-
-                    ,
-
-                        x + Math.cos(Math.PI*2*k/5)*35 - Math.cos( (Math.PI/2) + Math.PI*2*k/5 )*10
-                        ,
-                        y + Math.sin(Math.PI*2*k/5)*35 - Math.sin( (Math.PI/2) + Math.PI*2*k/5 )*10
-                    
-                    ,
-
-
-                        x+Math.cos(Math.PI*2*k/5)*50
-                        ,
-                        y+Math.sin(Math.PI*2*k/5)*50
-                )
-                dessin.stroke();
-                dessin.fill();
-                let kk = k+0.5;
-                dessin.fillStyle = (!(i%2))?'#202470':'#8285b5'
-                dessin.beginPath();
-                dessin.moveTo( x , y )
-                dessin.bezierCurveTo( 
-                    
-
-                        x + Math.cos(Math.PI*2*kk/5)*12 + Math.cos( (Math.PI/2) + Math.PI*2*kk/5 )*7
-                        ,
-                        y + Math.sin(Math.PI*2*kk/5)*12 + Math.sin( (Math.PI/2) + Math.PI*2*kk/5 )*7
-                    
-                    
-
-                    ,
-
-                        x + Math.cos(Math.PI*2*kk/5)*18 + Math.cos( (Math.PI/2) + Math.PI*2*kk/5 )*7
-                        ,
-                        y + Math.sin(Math.PI*2*kk/5)*18 + Math.sin( (Math.PI/2) + Math.PI*2*kk/5 )*7
-                    
-                    ,
-
-
-                        x+Math.cos(Math.PI*2*kk/5)*30
-                        ,
-                        y+Math.sin(Math.PI*2*kk/5)*30
-                )
-                dessin.moveTo( x , y )
-                dessin.bezierCurveTo( 
-                    
-
-                        x + Math.cos(Math.PI*2*kk/5)*8 - Math.cos( (Math.PI/2) + Math.PI*2*kk/5 )*5
-                        ,
-                        y + Math.sin(Math.PI*2*kk/5)*8 - Math.sin( (Math.PI/2) + Math.PI*2*kk/5 )*5
-                    
-                    
-
-                    ,
-
-                        x + Math.cos(Math.PI*2*kk/5)*13 - Math.cos( (Math.PI/2) + Math.PI*2*kk/5 )*5
-                        ,
-                        y + Math.sin(Math.PI*2*kk/5)*13 - Math.sin( (Math.PI/2) + Math.PI*2*kk/5 )*5
-                    
-                    ,
-
-
-                        x+Math.cos(Math.PI*2*kk/5)*20
-                        ,
-                        y+Math.sin(Math.PI*2*kk/5)*20
-                )
-                dessin.stroke();
-                dessin.fill();
-            }
-        } else {
-            let AnchorPoint = [
-            groundPos[i]                                     , canvas.height - 0*branchHeight[i]/3,
-            groundPos[i] + 80*Math.sin(FRAME+windOfset[i][0]), canvas.height - 1*branchHeight[i]/3,
-            groundPos[i] + 80*Math.cos(FRAME+windOfset[i][1]), canvas.height - 2*branchHeight[i]/3,
-            groundPos[i] + 80*Math.cos(FRAME+windOfset[i][2]), canvas.height - 3*branchHeight[i]/3
-            ]
-
-            for(let t=0.5   ; t<1 ; t+=0.08*(1 - (branchHeight[i]/canvas.height))**0.2) {
-                let [xt,yt] = bezierAtT(t,...AnchorPoint);
-                dessin.fillStyle = (i%2)?'#202470':'#8285b5'
-                dessin.beginPath();
-                dessin.moveTo( xt , yt )
-                k=4.2+Math.cos(FRAME+windOfset[i][2])/3.5
-                dessin.bezierCurveTo( 
-                    
-
-                        xt + Math.cos(Math.PI*2*k/5)*7.5 + Math.cos( (Math.PI/2) + Math.PI*2*k/5 )*15
-                        ,
-                        yt + Math.sin(Math.PI*2*k/5)*7.5 + Math.sin( (Math.PI/2) + Math.PI*2*k/5 )*15
-                    
-                    
-
-                    ,
-
-                        xt + Math.cos(Math.PI*2*k/5)*22.5 + Math.cos( (Math.PI/2) + Math.PI*2*k/5 )*15
-                        ,
-                        yt + Math.sin(Math.PI*2*k/5)*22.5 + Math.sin( (Math.PI/2) + Math.PI*2*k/5 )*15
-                    
-                    ,
-
-
-                        xt+Math.cos(Math.PI*2*k/5)*35
-                        ,
-                        yt+Math.sin(Math.PI*2*k/5)*35
-                )
-                dessin.moveTo( xt , yt )
-                dessin.bezierCurveTo( 
-                    
-
-                        xt + Math.cos(Math.PI*2*k/5)*7.5 + Math.cos( (Math.PI/2) + Math.PI*2*k/5 )*-15
-                        ,
-                        yt + Math.sin(Math.PI*2*k/5)*7.5 + Math.sin( (Math.PI/2) + Math.PI*2*k/5 )*-15
-                    
-                    
-
-                    ,
-
-                        xt + Math.cos(Math.PI*2*k/5)*22.5 + Math.cos( (Math.PI/2) + Math.PI*2*k/5 )*4
-                        ,
-                        yt + Math.sin(Math.PI*2*k/5)*22.5 + Math.sin( (Math.PI/2) + Math.PI*2*k/5 )*4
-                    
-                    ,
-
-
-                        xt+Math.cos(Math.PI*2*k/5)*35
-                        ,
-                        yt+Math.sin(Math.PI*2*k/5)*35
-                )
-                dessin.stroke();
-                dessin.fill();
-                [xt,yt] = bezierAtT(t+0.02,...AnchorPoint);
-                k=3.2+Math.cos(FRAME+windOfset[i][2])**2/20
-                dessin.moveTo( xt , yt )
-                dessin.bezierCurveTo( 
-                    
-
-                        xt + Math.cos(Math.PI*2*k/5)*7.5 + Math.cos( (Math.PI/2) + Math.PI*2*k/5 )*15
-                        ,
-                        yt + Math.sin(Math.PI*2*k/5)*7.5 + Math.sin( (Math.PI/2) + Math.PI*2*k/5 )*15
-                    
-                    
-
-                    ,
-
-                        xt + Math.cos(Math.PI*2*k/5)*22.5 + Math.cos( (Math.PI/2) + Math.PI*2*k/5 )*15
-                        ,
-                        yt + Math.sin(Math.PI*2*k/5)*22.5 + Math.sin( (Math.PI/2) + Math.PI*2*k/5 )*15
-                    
-                    ,
-
-
-                        xt+Math.cos(Math.PI*2*k/5)*35
-                        ,
-                        yt+Math.sin(Math.PI*2*k/5)*35
-                )
-                dessin.moveTo( xt , yt )
-                dessin.bezierCurveTo( 
-                    
-
-                        xt + Math.cos(Math.PI*2*k/5)*7.5 + Math.cos( (Math.PI/2) + Math.PI*2*k/5 )*-15
-                        ,
-                        yt + Math.sin(Math.PI*2*k/5)*7.5 + Math.sin( (Math.PI/2) + Math.PI*2*k/5 )*-15
-                    
-                    
-
-                    ,
-
-                        xt + Math.cos(Math.PI*2*k/5)*22.5 + Math.cos( (Math.PI/2) + Math.PI*2*k/5 )*4
-                        ,
-                        yt + Math.sin(Math.PI*2*k/5)*22.5 + Math.sin( (Math.PI/2) + Math.PI*2*k/5 )*4
-                    
-                    ,
-
-
-                        xt+Math.cos(Math.PI*2*k/5)*35
-                        ,
-                        yt+Math.sin(Math.PI*2*k/5)*35
-                )
-                dessin.stroke();
-                dessin.fill();
-            }
-        }
-    }
-
-    window.requestAnimationFrame( draw )
-}
-draw()
-
-    </script>
+	</script>
 </body>
 </html>

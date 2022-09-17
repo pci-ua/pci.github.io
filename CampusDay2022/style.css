@@ -1,0 +1,75 @@
+
+* {
+	border: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body, canvas {
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	background: none;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(0turn, #7fa881, #ffffff);
+	z-index: -1;
+}
+
+header {
+	display: grid;
+	grid-template: 
+			"a a a" 80vh
+			"c b d" 40px / 4rem auto 4rem;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+	justify-items: center;
+	grid-gap: 2rem;
+	height: 100vh;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+header img { height: 100px; }
+header > .pci { grid-area: b; }
+header > .event { grid-area: a; }
+header > .playstore { grid-area: c; }
+header > .apk { grid-area: d; }
+header .event { height: 80vh; }
+
+main::before {
+	content: ' ';
+	width: 100vw;
+	height: 5rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(#4f0e0e,#4f0e0e00);
+}
+main {
+	background-color: #080808;
+	min-height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+
+body {
+	scrollbar-color:  #4ab54f transparent;
+	scrollbar-width:  auto;
+}
+
+main :is(h1,strong) {
+	text-align: center;
+}
+
+main section {
+	margin: 5rem 0;
+}
