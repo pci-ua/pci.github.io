@@ -1,0 +1,111 @@
+/* Event info : */
+main article ul {
+    list-style-type: none;
+}
+
+article .location::before {
+    content: '📍';
+}
+article .datetime::before {
+    content: '📅';
+}
+article .information::before {
+    content: 'ℹ️';
+}
+article .website::before {
+    content: '🌐';
+}
+
+/* Time line : */
+main {
+    position: relative;
+}
+
+main::before {
+    content: '';
+
+    position: absolute;
+
+    left: -20px;
+    top: 0;
+
+    height: 100%;
+    width: 5px;
+    
+    background-color: teal;
+}
+
+main section h2::before {
+    content: '';
+
+    position: absolute;
+
+    left: -25px;
+    transform: translate(0,.5rem);
+
+    height: 1rem;
+    width: 1rem;
+    
+    background-color: teal;
+}
+
+
+main section article::before {
+    content: '';
+
+    position: absolute;
+
+    left: Calc(-15px - 1rem);
+    transform: translate(0,.5rem);
+
+    height: .4rem;
+    width: 2rem;
+    border-radius: .4rem;
+    
+    background-color: orange;
+}
+
+
+/* Général */
+
+main h2 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+main article h3 {
+    margin-left: 0;
+    text-indent: 0;
+    color: white;
+}
+
+
+main div h3 {
+    margin-left: 0;
+    text-indent: 0;
+    color: white;
+    background-color: rgb(0, 100, 100);
+
+    padding: 0;
+    padding-left: 4rem;
+
+    display: block;
+    width: 18rem;
+    height: 35px;
+
+    margin: 5rem 0;
+
+}
+main div h3::before {
+    content: '';
+
+    position: absolute;
+
+    left: -25px;
+
+    height: 35px;
+    width: 50px;
+    
+    background-color: rgb(0, 100, 100);
+}
