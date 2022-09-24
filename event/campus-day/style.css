@@ -24,8 +24,8 @@ canvas {
 header {
 	display: grid;
 	grid-template: 
-			"a a a" 80vh
-			"c b d" 40px / 4rem auto 4rem;
+			"a a a" 68vh
+			"c b d" 40px / auto 4rem auto;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
@@ -43,7 +43,7 @@ header > .pci { grid-area: b; }
 header > .event { grid-area: a; }
 header > .playstore { grid-area: c; }
 header > .apk { grid-area: d; }
-header .event { height: 80vh; }
+header .event { height: 68vh; }
 
 main::before {
 	content: ' ';
