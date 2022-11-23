@@ -1,0 +1,29 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#map_canvas {
+	height: 100%;
+	width: 100%;
+}
+
+#road_to {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 1rem;
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 2rem;
+	display: block;
+	width: 3rem;
+	height: 3rem;
+	font-size: 20pt;
+	cursor: pointer;
+}
