@@ -40,7 +40,7 @@ section:nth-child(1) article {
 }
 
 
-			.fake-button:not(:hover)::after {
+			/*.fake-button:not(:hover)::after {
 				content: ' ';
 				background-image: url('./cursor.png');
 				display: block;
@@ -52,8 +52,8 @@ section:nth-child(1) article {
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
-			} 
-/*.fake-button::after {
+			} */
+.fake-button::after {
     content: 'COMPLET';
     display: block;
     position: absolute;
@@ -66,7 +66,7 @@ section:nth-child(1) article {
     padding: .5rem;
     font-weight: 900;
     font-family: impact;
-}*/
+}
 
 .fake-button::before {
     content: ' ';
